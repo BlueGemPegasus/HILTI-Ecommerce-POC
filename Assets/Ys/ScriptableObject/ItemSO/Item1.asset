@@ -19,11 +19,8 @@ MonoBehaviour:
     S-BT fasteners
   packageName: Cordl. drill driver SBT 4-A22 box #2180532
   packageList:
-  - 'Cordl. drill driver SBT 4-A22 '
-  - 'Clamping band SFH 22-A '
-  - Screw M8 SFH 22-A
-  - Extension SFH 22-A
-  - Comfort side handle
+  - "1. Cordl. drill driver SBT 4-A22\n    1x Clamping band SFH 22-A \n    1x Screw
+    M8 SFH 22-A\n    1x Extension SFH 22-A\n    1x Comfort side handle"
   toolDetailDescription: "RPM: 2140 tours/minute \nMax. torque: 50 Nm \nRated voltage:
     21.6 V \nWeight: 2.52 kg \nDimensions (LxWxH): 248 x 92 x 244 mm \nChuck type:
     Keyless, steel jaws, 1.5 to 13 mm \nProduct class: Ultimate"
