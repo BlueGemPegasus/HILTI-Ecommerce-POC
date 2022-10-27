@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 216db3c08a0cdc44b8b8a16a7518ad94, type: 3}
+  m_Name: Package7_1
+  m_EditorClassIdentifier: 
+  packageContents: "1. Cordl. impact wrench SIW 22T-A 1/2\" case #409459\n    1x
+    Cordl. impact wrench SIW 22T-A 1/2\"\r\n    1x Impact socket S-NSD 1/2\"-13 S\r\n   
+    1x Impact socket S-NSD 1/2\"-15 S\r\n    1x Impact socket S-NSD 1/2\"-13 L\r\n   
+    1x Impact socket S-NSD 1/2\"-15 L\r\n    1x Tool case SIW 22T-A 1/2\" assy"
+  packagePrice: RM 2,130.00

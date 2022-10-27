@@ -24,7 +24,7 @@ public class ProductDetailPage : MonoBehaviour
 
 
     //test
-    private int testId = 6;
+    private int testId = 10;
     
     // Start is called before the first frame update
     void Start()

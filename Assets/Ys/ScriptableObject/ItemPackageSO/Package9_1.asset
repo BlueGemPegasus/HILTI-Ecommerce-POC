@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 216db3c08a0cdc44b8b8a16a7518ad94, type: 3}
+  m_Name: Package9_1
+  m_EditorClassIdentifier: 
+  packageContents: "1. Cordless rotary hammer TE 2-A22 case #2034358\n    1x Cordless
+    rotary hammer TE 2-A22 assy\r\n    1x Tool case TE 2-A22 assy\r\n    1x Hilti
+    Grease"
+  packagePrice: RM 1,340.00

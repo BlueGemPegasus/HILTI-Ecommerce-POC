@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 216db3c08a0cdc44b8b8a16a7518ad94, type: 3}
+  m_Name: Package9_3
+  m_EditorClassIdentifier: 
+  packageContents: "3. TE 2-A Combo B #3583833\n    1x Cordless rotary hammer TE
+    2-A22 assy\r\n    1x Tool case TE 2-A22 assy\r\n    1x Hilti Grease\r\n    1x
+    Battery charger C 4/36-350 230V\r\n    8x Hammer drill bit TE-CX 8/17 MP8\r\n   
+    1x Battery pack B 22/5.2"
+  packagePrice: RM 3,270.00

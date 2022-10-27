@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 216db3c08a0cdc44b8b8a16a7518ad94, type: 3}
+  m_Name: Package11_1
+  m_EditorClassIdentifier: 
+  packageContents: "11. Cordl. combihammer TE 30-A36 case #2173218\n    1x Cordl.
+    combihammer TE 30-A36 Gen.03\r\n    1x Depth gauge\r\n    1x Tool case TE 30-A36
+    assy\r\n    1x Hilti Grease"
+  packagePrice: RM 3,740.00
