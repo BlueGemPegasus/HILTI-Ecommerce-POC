@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81230a529fc9e464b822c68dd9ebc776, type: 3}
+  m_Name: item2
+  m_EditorClassIdentifier: 
+  itemId: 2
+  itemSprite: {fileID: 21300000, guid: 779ee27e8e9dd4a46976454371338ebd, type: 3}
+  nameTxt: SF BT CORDLESS DRILL
+  descriptionTxt: Cordless drill for predrilling accurate holes for X-BT fasteners
+  packageList:
+  - {fileID: 11400000, guid: 45ce26b684e536049be5d1f5662b015e, type: 2}
+  toolDetailDescription: 'Application: [consumable dependent]
+
+    RPM: 4,000
+
+    Max.
+    torque: 3 Nm
+
+    Rated voltage: 21.6 V
+
+    Weight: 1.9 kg
+
+    Width: 91 mm'

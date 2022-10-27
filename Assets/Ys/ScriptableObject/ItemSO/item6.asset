@@ -12,17 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81230a529fc9e464b822c68dd9ebc776, type: 3}
   m_Name: item6
   m_EditorClassIdentifier: 
+  itemId: 6
   itemSprite: {fileID: 21300000, guid: 35b5c2375c8d8aa4d8c43a7080c24984, type: 3}
   nameTxt: SIW 6AT-A22 IMPACT WRENCH
-  priceTxt: RM 1,740.00
   descriptionTxt: 'Product Details: Power-class 22V light-torque impact wrench with
     1/2" detent anvil for anchoring and bolting'
   packageList:
-  - "1. Cordl. impact wrench SIW 6AT-A22 case #2112536\n    1x Cordl. impact wrench
-    SIW 6AT-A22 assy\r\n    1x Tool case SIW 6AT-A22 assy"
-  - "2. SIW-AT Combo #3686704\n    1x Cordl. impact wrench SIW 6AT-A22 assy\r\n   
-    1x Tool case SIW 6AT-A22 assy\r\n    1x Battery pack B 22/2.6\r\n    1x Adaptive
-    torque module SI-AT-A22\r\n    1x USB cable"
+  - {fileID: 11400000, guid: 89f021902d5a5a045abf75c9cbb93ad6, type: 2}
+  - {fileID: 11400000, guid: 9a81671056a27d74bb471a89ba86e87c, type: 2}
   toolDetailDescription: 'Anvil type: 1/2" detent pin
 
     Maximum torque: 90 Nm

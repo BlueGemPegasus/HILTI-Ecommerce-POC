@@ -5,13 +5,12 @@ using UnityEngine;
 [CreateAssetMenu(fileName ="item")]
 public class Item : ScriptableObject
 {
+    public int itemId;
     public Sprite itemSprite;
 
     public string nameTxt;
-    public string priceTxt;
     public string descriptionTxt;
-    [TextArea]
-    public List<string> packageList;
+    public List<ItemPackage> packageList;
     [TextArea]
     public string toolDetailDescription;
 }

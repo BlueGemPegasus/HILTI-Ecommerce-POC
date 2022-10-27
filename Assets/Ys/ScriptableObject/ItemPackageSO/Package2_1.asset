@@ -9,12 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 518b86a3f4fa2124387cec8618a19476, type: 3}
-  m_Name: item11
+  m_Script: {fileID: 11500000, guid: 216db3c08a0cdc44b8b8a16a7518ad94, type: 3}
+  m_Name: Package2_1
   m_EditorClassIdentifier: 
-  itemSprite: {fileID: 0}
-  nameTxt: 
-  priceTxt: 
-  descriptionTxt: 
-  packageList: []
-  toolDetailDescription: 
+  packageContents: '1. Cordl. drill SF BT 22-A #2123719
+
+    1x Cordl. drill SF BT
+    22-A
+
+    1x Support strip SF BT 18/22-A'
+  packagePrice: RM 1,260.00

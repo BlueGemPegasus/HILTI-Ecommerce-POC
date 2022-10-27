@@ -2951,6 +2951,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3317635aca9392046aeb4b43a70c4117, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  allItem: {fileID: 11400000, guid: 9b2fedcf19369f64fb0dbfd638765355, type: 2}
   item: {fileID: 11400000, guid: 71c140657a18b784a8a412e862fd29a3, type: 2}
   itemImg: {fileID: 897272481253345939}
   toolNameText: {fileID: 5412081347290245205}
@@ -2959,6 +2960,9 @@ MonoBehaviour:
   packageNameText: {fileID: 1126659221983882253}
   packageList: {fileID: 3687072595674374696}
   toolDetailText: {fileID: 5066794567036254231}
+  quantityText: {fileID: 996938166}
+  increaseBtn: {fileID: 1686106368}
+  decreaseBtn: {fileID: 1331298631}
 --- !u!1 &3943702384802900243
 GameObject:
   m_ObjectHideFlags: 0
@@ -4215,6 +4219,7 @@ GameObject:
   - component: {fileID: 3687072595674374696}
   - component: {fileID: 2422925821373049317}
   - component: {fileID: 161593036}
+  - component: {fileID: 1931333138048781632}
   m_Layer: 5
   m_Name: PackageDropDown
   m_TagString: Untagged
@@ -4382,6 +4387,18 @@ MonoBehaviour:
   m_ChildScaleWidth: 1
   m_ChildScaleHeight: 1
   m_ReverseArrangement: 0
+--- !u!114 &1931333138048781632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6410953758132259907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66886e501e56d3c478ac9fe3349b12b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6464543103238115095
 GameObject:
   m_ObjectHideFlags: 0
