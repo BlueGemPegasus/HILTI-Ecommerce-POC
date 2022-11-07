@@ -24,13 +24,13 @@ public class ProductDetailPage : MonoBehaviour
 
 
     //test
-    private int testId = 10;
+    public int id = 10;
     
     // Start is called before the first frame update
     void Start()
     {
         //test
-        SetSelectedItem(testId);
+        SetSelectedItem(id);
     }
 
     void setPanel()
@@ -50,7 +50,7 @@ public class ProductDetailPage : MonoBehaviour
             packageList.options.Add(new TMP_Dropdown.OptionData(itemPackage.packageContents));
         }
         //assign default contents for drop down
-        packageNameText.text = item.packageList[0].packageContents;
+        packageList.value = 1;
         priceText.text = item.packageList[0].packagePrice;
 
     }
@@ -62,6 +62,7 @@ public class ProductDetailPage : MonoBehaviour
         {
             setPanel();
         }
+        //LayoutRebuilder.ForceRebuildLayoutImmediate(this.GetComponent<RectTransform>());
     }
 
     public void SetPackagePrice(int arrayPos)
@@ -106,5 +107,11 @@ public class ProductDetailPage : MonoBehaviour
         int previousQuantity = GetCurrentQuantity();
         quantityText.text = Mathf.Clamp((previousQuantity - 1),0,99).ToString();
     }
+
+    public void ReturnMainMenu()
+    {
+        AppManager.Instance.GoToPage(PageName.MainMenu);
+    }
+
 
 }

@@ -18,7 +18,7 @@ MonoBehaviour:
   descriptionTxt: Powerful SDS Plus (TE-C) cordless rotary hammer for heavy-duty
     concrete drilling and corrective chiselling
   packageList:
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 521cf284b1dabdb41a806f527c111f22, type: 2}
   toolDetailDescription: 'Weight according to EPTA Procedure 01/2003: 5.1 kg
 
     Optimum

@@ -36,6 +36,7 @@ public class ButtonCategoryComponent : MonoBehaviour
                             component.toolImage.sprite = item.itemSprite;
                             component.toolNameText.text = item.nameTxt;
                             component.descriptionText.text = item.descriptionTxt;
+                            component.itemId = item.itemId;
                             //component.priceText.text = item.packageList.
                         }
                     }
