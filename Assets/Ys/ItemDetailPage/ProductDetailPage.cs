@@ -19,8 +19,8 @@ public class ProductDetailPage : MonoBehaviour
     //Quantity Panel
     [Tooltip("Quantity Panel")]
     public TextMeshProUGUI quantityText;
-    public Button increaseBtn;
-    public Button decreaseBtn;
+    //public Button increaseBtn;
+    //public Button decreaseBtn;
 
 
     //test
@@ -62,7 +62,7 @@ public class ProductDetailPage : MonoBehaviour
         {
             setPanel();
         }
-        //LayoutRebuilder.ForceRebuildLayoutImmediate(this.GetComponent<RectTransform>());
+        //LayoutRebuilder.ForceRebuildLayoutImmediate(this.gameObject.GetComponent<RectTransform>());
     }
 
     public void SetPackagePrice(int arrayPos)
@@ -79,15 +79,15 @@ public class ProductDetailPage : MonoBehaviour
     private void OnEnable()
     {
         DropDownAction.getPackagePrice += SetPackagePrice;
-        increaseBtn.onClick.AddListener(() => IncreaseQuantity());
-        decreaseBtn.onClick.AddListener(() => DecreaseQuantity());
+        //increaseBtn.onClick.AddListener(() => IncreaseQuantity());
+        //decreaseBtn.onClick.AddListener(() => DecreaseQuantity());
     }
 
     private void OnDisable()
     {
         DropDownAction.getPackagePrice -= SetPackagePrice;
-        increaseBtn.onClick.RemoveListener(() => IncreaseQuantity());
-        decreaseBtn.onClick.RemoveListener(() => DecreaseQuantity());
+        //increaseBtn.onClick.RemoveListener(() => IncreaseQuantity());
+        //decreaseBtn.onClick.RemoveListener(() => DecreaseQuantity());
     }
 
     private int GetCurrentQuantity()
@@ -96,13 +96,13 @@ public class ProductDetailPage : MonoBehaviour
         return currentQuantity;
     }
 
-    private void IncreaseQuantity()
+    public void IncreaseQuantity()
     {
         int previousQuantity = GetCurrentQuantity();
         quantityText.text = (previousQuantity + 1).ToString();
     }
 
-    private void DecreaseQuantity()
+    public void DecreaseQuantity()
     {
         int previousQuantity = GetCurrentQuantity();
         quantityText.text = Mathf.Clamp((previousQuantity - 1),0,99).ToString();
