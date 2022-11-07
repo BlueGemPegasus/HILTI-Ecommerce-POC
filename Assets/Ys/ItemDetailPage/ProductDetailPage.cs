@@ -16,6 +16,8 @@ public class ProductDetailPage : MonoBehaviour
     public TMP_Dropdown packageList;
     public TextMeshProUGUI toolDetailText;
 
+    public RectTransform contentPanel;
+
     //Quantity Panel
     [Tooltip("Quantity Panel")]
     public TextMeshProUGUI quantityText;
@@ -30,7 +32,7 @@ public class ProductDetailPage : MonoBehaviour
     void Start()
     {
         //test
-        SetSelectedItem(id);
+        //SetSelectedItem(id);
     }
 
     void setPanel()
@@ -51,6 +53,7 @@ public class ProductDetailPage : MonoBehaviour
         }
         //assign default contents for drop down
         packageList.value = 1;
+        //packageNameText.text = item.packageList[0];
         priceText.text = item.packageList[0].packagePrice;
 
     }
@@ -62,7 +65,7 @@ public class ProductDetailPage : MonoBehaviour
         {
             setPanel();
         }
-        //LayoutRebuilder.ForceRebuildLayoutImmediate(this.gameObject.GetComponent<RectTransform>());
+        LayoutRebuilder.ForceRebuildLayoutImmediate(contentPanel);
     }
 
     public void SetPackagePrice(int arrayPos)
