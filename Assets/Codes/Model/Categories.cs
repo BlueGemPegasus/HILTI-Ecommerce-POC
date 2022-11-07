@@ -2,7 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Categories : MonoBehaviour
+[CreateAssetMenu(fileName = "category")]
+public class Categories : ScriptableObject
 {
-
+    public int Id;
+    public string categoryTxt;
+    public int[] itemId;
 }

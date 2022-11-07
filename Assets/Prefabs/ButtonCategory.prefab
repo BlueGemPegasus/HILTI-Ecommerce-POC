@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 5003122344348800066}
   - component: {fileID: 5706373113000118942}
   - component: {fileID: 1120225203714266259}
+  - component: {fileID: -862991809423941705}
   m_Layer: 0
   m_Name: ButtonCategory
   m_TagString: Untagged
@@ -151,7 +152,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4132695764051521809}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: -862991809423941705}
+        m_TargetAssemblyTypeName: ButtonCategoryComponent, Assembly-CSharp
+        m_MethodName: ButtonOnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 3440066502387671056}
+        m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
+        m_MethodName: set_interactable
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &5003122344348800066
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -195,6 +220,22 @@ MonoBehaviour:
   m_EffectColor: {r: 0.85882354, g: 0.85490197, b: 0.85490197, a: 1}
   m_EffectDistance: {x: 1, y: -1}
   m_UseGraphicAlpha: 1
+--- !u!114 &-862991809423941705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5675913137886984704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e00af2364beb5bb49928a7e738ad2e70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allItem: {fileID: 11400000, guid: 9b2fedcf19369f64fb0dbfd638765355, type: 2}
+  id: 0
+  thisButton: {fileID: 3440066502387671056}
+  categoryText: {fileID: 5435967867711506216}
 --- !u!1 &7138283625606783434
 GameObject:
   m_ObjectHideFlags: 0

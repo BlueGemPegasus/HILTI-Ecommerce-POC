@@ -831,8 +831,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 655, y: 0}
-  m_SizeDelta: {x: 550, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8481271990561820373
 CanvasRenderer:
@@ -1183,6 +1183,7 @@ GameObject:
   - component: {fileID: 8481271991605203157}
   - component: {fileID: 8481271991605203176}
   - component: {fileID: 2820550397903554953}
+  - component: {fileID: 6902036216258733373}
   m_Layer: 5
   m_Name: ComponentCard
   m_TagString: Untagged
@@ -1320,6 +1321,22 @@ MonoBehaviour:
   m_EffectColor: {r: 0.85882354, g: 0.85490197, b: 0.85490197, a: 1}
   m_EffectDistance: {x: 1, y: -1}
   m_UseGraphicAlpha: 1
+--- !u!114 &6902036216258733373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8481271991605203159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2183b3b8d80f004ebc3152cb4f4fd88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toolImage: {fileID: 8481271991926559331}
+  toolNameText: {fileID: 8481271990651070551}
+  descriptionText: {fileID: 2184717228928572219}
+  priceText: {fileID: 3410303784785437886}
 --- !u!1 &8481271991926559341
 GameObject:
   m_ObjectHideFlags: 0
