@@ -1,0 +1,46 @@
+{
+    "name": "PlayerInputs",
+    "maps": [
+        {
+            "name": "OnScreen",
+            "id": "ac5a6fda-6421-4e64-a2d4-4aa93f6785a0",
+            "actions": [
+                {
+                    "name": "Place",
+                    "type": "PassThrough",
+                    "id": "bd2aeacc-1c6e-4f51-baec-c8a001655c29",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "95b754fa-010c-4dcf-9490-576f94608f85",
+                    "path": "<Touchscreen>/Press",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Phone",
+                    "action": "Place",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "Phone",
+            "bindingGroup": "Phone",
+            "devices": [
+                {
+                    "devicePath": "<Touchscreen>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}

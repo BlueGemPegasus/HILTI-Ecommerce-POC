@@ -5,10 +5,8 @@ using System.Linq;
 using System.Security.Cryptography;
 using TMPro;
 using Unity.VisualScripting;
-using UnityEditor.Search;
 using UnityEngine;
 using UnityEngine.UI;
-using static UnityEditor.Timeline.Actions.MenuPriority;
 
 public class CategoriesComponent : MonoBehaviour
 {
