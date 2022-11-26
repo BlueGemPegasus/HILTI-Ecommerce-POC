@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61706e841eb165e48be60a097f374b5b, type: 3}
+  m_Name: Renovation
+  m_EditorClassIdentifier: 
+  shopName: Renovation Store
+  description: This store provide tools that are frequently used in renovation industry
+    such as cordless tools. Share us your needs and we will suggest you the best
+    tool based on your use case
+  questionList:
+  - {fileID: 11400000, guid: e3a20b75c1da45c4e96103dc8ed62b00, type: 2}
+  - {fileID: 11400000, guid: 4165298d88218bb449df9bc21786a4d3, type: 2}
+  - {fileID: 11400000, guid: 5777019945ffbc840b32b4035589cb2b, type: 2}
+  - {fileID: 11400000, guid: cc1744bb88979cf4bbb9626fc7716552, type: 2}
+  - {fileID: 11400000, guid: c8e09684307e1be40a52d71484ecca56, type: 2}
+  - {fileID: 11400000, guid: 03415b19c11463544b3a82f2b4e9a168, type: 2}

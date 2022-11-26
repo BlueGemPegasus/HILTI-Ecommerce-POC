@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc3a5177e1b82b14ebcdc57d1dcfdf57, type: 3}
+  m_Name: Suggestion 3
+  m_EditorClassIdentifier: Assembly-CSharp::SuggestionOption
+  SuggestionNumber: 3
+  suggestedItemId: 4
+  tools:
+  - {fileID: 11400000, guid: 6fca50416e81ccb4da650188a0fd689d, type: 2}
+  inserts:
+  - {fileID: 11400000, guid: e85ae6302193d9f4bac76f9feceeb14e, type: 2}
+  batteries:
+  - {fileID: 11400000, guid: 2460331a48e408b4f9630b11c067ee05, type: 2}
+  - {fileID: 11400000, guid: 0a11c03b0faf975439c6641e1b436dd4, type: 2}
+  similarToolId: 03000000

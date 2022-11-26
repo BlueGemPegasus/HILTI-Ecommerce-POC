@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61706e841eb165e48be60a097f374b5b, type: 3}
+  m_Name: Construction
+  m_EditorClassIdentifier: 
+  shopName: Construction Shop
+  description: In this store, we have listed out essential construction tools and
+    we will help you find it based on your needs. They are available in various shapes
+    and sizes depending upon the work.
