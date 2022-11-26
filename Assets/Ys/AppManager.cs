@@ -7,9 +7,9 @@ using System;
 
 public enum PageName
 {
-    MainMenu,
-    ItemDetail,
-    Gamification
+    MainMenu = 1,
+    ItemDetail = 2,
+    Gamification = 3
        
 }
 
@@ -35,6 +35,7 @@ public class AppManager : MonoBehaviour
             Instance = this;
         }
     }
+
 
     public void GoToPage(PageName newPage, Action callback = null)
     {

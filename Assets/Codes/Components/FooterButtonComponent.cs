@@ -17,12 +17,12 @@ public class FooterButtonComponent : MonoBehaviour
     private void OnEnable()
     {
         homeButton.onClick.AddListener(() => AppManager.Instance.GoToPage(PageName.MainMenu));
-        homeButton.onClick.AddListener(() => AppManager.Instance.GoToPage(PageName.Gamification));
+        gameButton.onClick.AddListener(() => AppManager.Instance.GoToPage(PageName.Gamification));
     }
 
     private void OnDisable()
     {
         homeButton.onClick.RemoveAllListeners();
-        homeButton.onClick.RemoveAllListeners();
+        gameButton.onClick.RemoveAllListeners();
     }
 }
