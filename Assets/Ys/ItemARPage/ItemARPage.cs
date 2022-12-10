@@ -12,4 +12,9 @@ public class ItemARPage : MonoBehaviour
     {
         
     }
+
+    public void ReturnMainMenu()
+    {
+        AppManager.Instance.GoToPage(PageName.MainMenu);
+    }
 }

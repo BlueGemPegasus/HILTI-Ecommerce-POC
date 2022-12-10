@@ -42,4 +42,10 @@ public class ComponentCardComponent : MonoBehaviour
         }
     }
 
+
+    public void TemporaryFunctionToAR()
+    {
+        AppManager.Instance.GoToPage(PageName.ARPage);
+    }
+
 }

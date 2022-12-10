@@ -37,7 +37,7 @@ public class ButtonCategoryComponent : MonoBehaviour
                             component.toolNameText.text = item.nameTxt;
                             component.descriptionText.text = item.descriptionTxt;
                             component.itemId = item.itemId;
-                            //component.priceText.text = item.packageList.
+                            component.priceText.text = item.packageList[0].packagePrice;
                         }
                     }
                 }

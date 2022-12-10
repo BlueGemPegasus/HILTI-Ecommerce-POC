@@ -7,9 +7,18 @@
             "actions": [
                 {
                     "name": "Place",
-                    "type": "PassThrough",
+                    "type": "Value",
                     "id": "bd2aeacc-1c6e-4f51-baec-c8a001655c29",
                     "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Touch",
+                    "type": "Button",
+                    "id": "5c874d18-9632-4c0f-9647-b8b3377c7fc9",
+                    "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -19,11 +28,22 @@
                 {
                     "name": "",
                     "id": "95b754fa-010c-4dcf-9490-576f94608f85",
-                    "path": "<Touchscreen>/Press",
+                    "path": "<Touchscreen>/position",
                     "interactions": "",
                     "processors": "",
                     "groups": "Phone",
                     "action": "Place",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c71a8219-e803-4fdf-b46b-67f70e81d368",
+                    "path": "<Touchscreen>/Press",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Touch",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

@@ -9,7 +9,8 @@ public enum PageName
 {
     MainMenu = 1,
     ItemDetail = 2,
-    Gamification = 3
+    Gamification = 3,
+    ARPage = 4
        
 }
 
@@ -55,6 +56,9 @@ public class AppManager : MonoBehaviour
                 break;
             case PageName.Gamification:
                 obj = AllPage.FirstOrDefault(x => x.gameObject.name == "GamificationPage");
+                break;
+            case PageName.ARPage:
+                obj = AllPage.FirstOrDefault(x => x.gameObject.name == "ItemARPage");
                 break;
         }
 

@@ -1,8 +1,8 @@
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
-
-using H.Input;
+using UnityEngine.UI;
+using TMPro;
 
 using System;
 using System.Collections;
@@ -14,31 +14,116 @@ public class ARObjectPlaceCode : MonoBehaviour
     [Tooltip("This is to reference the 3D object")]
     public GameObject toolsPrefab;
 
-    [Tooltip("The ghost object for the 3D object, reference where it would be placed")]
-    public GameObject placementIndicatorPrefab;
-
-    [Tooltip("This section is to reference the ARRaycastManager")]
+    [Tooltip("This section is to reference the AR Raycast Manager")]
     public ARRaycastManager aRRaycastManager;
 
-    private GameObject toolsOnScene;
+    [Tooltip("This is to reference the AR Plane Manager")]  
+    public ARPlaneManager aRPlaneManager;
 
-    private Pose placementPos;
-    private bool placementPosIsValid = false;
+    [Tooltip("Reference for the Start Panel")]
+    public GameObject startPanel;
 
-    private InputCatcher _inputCatcher;
+    [Tooltip("Reference to the ButtonHolder Panel")]
+    public GameObject HolderPanel;
 
-    private void Awake()
+    [Tooltip("Reference for the Place Button")]
+    public GameObject placeButton;
+
+    [Tooltip("Reference for the Content GameObejct")]
+    public Transform content;
+
+    private GameObject placedToolsOnScene;
+
+    private bool _spawn = false;
+
+    private Vector2 touchPosition = default;
+
+    static List<ARRaycastHit> hits = new List<ARRaycastHit>();
+
+    private void OnEnable()
     {
-        _inputCatcher = GetComponent<InputCatcher>();    
+        placeButton.GetComponent<Button>().onClick.AddListener(PlaceOnClick);
+        CleanUp();
     }
 
-    private void TryGetTouchPosition()
+    private void OnDisable()
     {
-        if (_inputCatcher.place != Vector2.zero)
-        {
+        placeButton.GetComponent<Button>().onClick.RemoveAllListeners();
+    }
 
+    private void Update()
+    {
+        if (startPanel.activeSelf)
+            return;
+
+        if (!_spawn)
+            SettingUpAR();
+            
+
+        // Prefab is detected!
+        //if (toolsPrefab != null)
+        //{
+        //    debugText.text = "Prefab is there.";
+        //}
+        //else
+        //{
+        //    debugText.text = "Prefab is missing";
+        //}
+    }
+
+    private void SettingUpAR()
+    {
+        // Touch is detected!
+        if (Input.touchCount > 0)
+        {
+            Touch touch = Input.GetTouch(0);
+            touchPosition = touch.position;
         }
 
+
+        if (aRRaycastManager.Raycast(touchPosition, hits, TrackableType.PlaneWithinPolygon))
+        {
+            Pose hitPose = hits[0].pose;
+
+            if (placedToolsOnScene == null)
+            {
+                placedToolsOnScene = Instantiate(toolsPrefab, hitPose.position, hitPose.rotation, content.transform);
+            }
+            else
+            {
+                placedToolsOnScene.transform.SetPositionAndRotation(hitPose.position, hitPose.rotation);
+            }
+        }
+
+        if (placedToolsOnScene != null)
+        {
+            placeButton.SetActive(true);
+        }
+    }
+
+    private void PlaceOnClick()
+    {
+        _spawn = true;
+        HolderPanel.SetActive(true);
+        startPanel.SetActive(false);
+        foreach (var plane in aRPlaneManager.trackables)
+        {
+            plane.gameObject.SetActive(false);
+        }
+        aRPlaneManager.enabled = !aRPlaneManager.enabled;
+    }
+
+    private void CleanUp()
+    {
+        startPanel.SetActive(true);
+        HolderPanel.SetActive(false);
+        placeButton.SetActive(false);
+        _spawn = false;
+
+        foreach (Transform childObject in content)
+        {
+            Destroy(childObject);
+        }
     }
 
 }
