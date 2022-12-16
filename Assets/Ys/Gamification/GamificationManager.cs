@@ -35,6 +35,10 @@ public class GamificationManager : MonoBehaviour
     private int suggestion;
     public int currentSuggestion { get { return suggestion; } }
 
+    [Header("Survey Background")]
+    public Sprite RenovationBG;
+    public Sprite FreelanceBG;
+
     private void Update()
     {
         Debug.Log("suggestion"+suggestion);
@@ -90,7 +94,7 @@ public class GamificationManager : MonoBehaviour
     private void ShopInfoBtn(ShopType shop)
     {
         shopOverlay.SetActive(true);
-        if(shop == ShopType.Renovation || shop == ShopType.Construction)
+        if(shop == ShopType.Renovation || shop == ShopType.Freelance)
             enterShopBtn.interactable = true;
         else
             enterShopBtn.interactable = false;
@@ -103,6 +107,16 @@ public class GamificationManager : MonoBehaviour
 
     private void OpenShop()
     {
+        switch (currentShop.shopName)
+        {
+            case "Renovation Store":
+                surveyPanel.GetComponent<Image>().sprite = RenovationBG;
+                break;
+            case "Freenlance Store":
+                surveyPanel.GetComponent<Image>().sprite = FreelanceBG;
+                break;
+        }
+        
         SwitchGamiSceen(GamiPanel.survey);
     }
 
