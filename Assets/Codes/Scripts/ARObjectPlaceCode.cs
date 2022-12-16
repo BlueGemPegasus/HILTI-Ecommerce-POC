@@ -59,16 +59,6 @@ public class ARObjectPlaceCode : MonoBehaviour
         if (!_spawn)
             SettingUpAR();
             
-
-        // Prefab is detected!
-        //if (toolsPrefab != null)
-        //{
-        //    debugText.text = "Prefab is there.";
-        //}
-        //else
-        //{
-        //    debugText.text = "Prefab is missing";
-        //}
     }
 
     private void SettingUpAR()
@@ -108,18 +98,25 @@ public class ARObjectPlaceCode : MonoBehaviour
         startPanel.SetActive(false);
         foreach (var plane in aRPlaneManager.trackables)
         {
-            plane.gameObject.SetActive(false);
+            Destroy(plane);
         }
         aRPlaneManager.enabled = !aRPlaneManager.enabled;
     }
 
     private void CleanUp()
     {
+        // Reset UI Panels
         startPanel.SetActive(true);
         HolderPanel.SetActive(false);
         placeButton.SetActive(false);
+
+        // Enable PlaneManager Again
+        aRPlaneManager.enabled = true;
+
+        // Reset _spawn check
         _spawn = false;
 
+        // Destroy all of the tools spawned in Content
         foreach (Transform childObject in content)
         {
             Destroy(childObject);
