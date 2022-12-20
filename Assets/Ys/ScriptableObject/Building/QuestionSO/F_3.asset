@@ -15,7 +15,7 @@ MonoBehaviour:
   number: 3
   question: How long will  you be using  your tool?
   ansList:
-  - WOOD MATERIAL
-  - METAL MATERIAL
-  - STEEL MATERIAL
-  - PLASTIC MATERIAL
+  - < 30 min
+  - 1 - 2 hours
+  - 3 - 4 hours
+  - '> 4 hours'
