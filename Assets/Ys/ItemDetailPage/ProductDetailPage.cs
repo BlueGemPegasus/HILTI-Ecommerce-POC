@@ -18,6 +18,8 @@ public class ProductDetailPage : MonoBehaviour
 
     public RectTransform contentPanel;
 
+    public CartPage cartPage;
+
     //Quantity Panel
     [Tooltip("Quantity Panel")]
     public TextMeshProUGUI quantityText;
@@ -116,5 +118,13 @@ public class ProductDetailPage : MonoBehaviour
         AppManager.Instance.GoToPage(PageName.MainMenu);
     }
 
+    public void TemporaryFunctionToAR()
+    {
+        AppManager.Instance.GoToPage(PageName.ARPage);
+    }
 
+    private void AddToCart()
+    {
+
+    }
 }

@@ -82,7 +82,6 @@ public class ARButtons : MonoBehaviour
     {
         SetInactiveEverything();
         aRObjectComponent.featurePanel.SetActive(true);
-        // Remove this after coded each button and feature in.
         aRObjectComponent.descriptionPanel.SetActive(true);
     }
 
@@ -116,10 +115,12 @@ public class ARButtons : MonoBehaviour
         if (aRObjectComponent.spotLight.activeSelf)
         {
             aRObjectComponent.spotLight.SetActive(false);
+            aRObjectComponent.directionalLight.SetActive(true);
         }
         else
         {
             aRObjectComponent.spotLight.SetActive(true);
+            aRObjectComponent.directionalLight.SetActive(false);
         }
     }
 

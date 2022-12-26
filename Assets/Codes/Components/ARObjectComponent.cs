@@ -13,6 +13,8 @@ public class ARObjectComponent : MonoBehaviour
     public Animator animator;
     [Tooltip("Light GameObject References")]
     public GameObject spotLight;
+    [Tooltip("Refrence for the Directional Light")]
+    public GameObject directionalLight;
     [Tooltip("Overview GameObject References")]
     public GameObject overview;
     [Tooltip("Feature Panel References")]
@@ -21,6 +23,12 @@ public class ARObjectComponent : MonoBehaviour
     public GameObject descriptionPanel;
     [Tooltip("Description Text Reference")]
     public TextMeshProUGUI descriptionText;
+
+    private void OnEnable()
+    {
+        canvas.GetComponent<Canvas>().worldCamera = Camera.main;
+    }
+
 
 
 }

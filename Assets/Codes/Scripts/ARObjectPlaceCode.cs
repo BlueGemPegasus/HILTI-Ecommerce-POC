@@ -23,6 +23,9 @@ public class ARObjectPlaceCode : MonoBehaviour
     [Tooltip("Reference for the Start Panel")]
     public GameObject startPanel;
 
+    [Tooltip("Reference for the Start Button")]
+    public Button startButton;
+
     [Tooltip("Reference to the ButtonHolder Panel")]
     public GameObject HolderPanel;
 
@@ -43,12 +46,14 @@ public class ARObjectPlaceCode : MonoBehaviour
     private void OnEnable()
     {
         placeButton.GetComponent<Button>().onClick.AddListener(PlaceOnClick);
+        startButton.onClick.AddListener(OnBegin);
         CleanUp();
     }
 
     private void OnDisable()
     {
         placeButton.GetComponent<Button>().onClick.RemoveAllListeners();
+        startButton.onClick.RemoveAllListeners();
     }
 
     private void Update()
@@ -95,12 +100,14 @@ public class ARObjectPlaceCode : MonoBehaviour
     {
         _spawn = true;
         HolderPanel.SetActive(true);
-        startPanel.SetActive(false);
+        placeButton.SetActive(false);
+        // Destroy all Plane
         foreach (var plane in aRPlaneManager.trackables)
         {
-            Destroy(plane);
+            plane.gameObject.SetActive(false);
         }
-        aRPlaneManager.enabled = !aRPlaneManager.enabled;
+        aRPlaneManager.enabled = false;
+        aRRaycastManager.enabled = false;
     }
 
     private void CleanUp()
@@ -110,8 +117,9 @@ public class ARObjectPlaceCode : MonoBehaviour
         HolderPanel.SetActive(false);
         placeButton.SetActive(false);
 
-        // Enable PlaneManager Again
-        aRPlaneManager.enabled = true;
+        // Disable PlaneManager First
+        aRPlaneManager.enabled = false;
+        aRRaycastManager.enabled = false;
 
         // Reset _spawn check
         _spawn = false;
@@ -121,6 +129,16 @@ public class ARObjectPlaceCode : MonoBehaviour
         {
             Destroy(childObject);
         }
+
     }
 
+    private void OnBegin()
+    {
+        // Disable Start Panel
+        startPanel.SetActive(false);
+        // Enable Plane Scan
+        aRPlaneManager.enabled = true;
+        aRRaycastManager.enabled = true;
+
+    }
 }

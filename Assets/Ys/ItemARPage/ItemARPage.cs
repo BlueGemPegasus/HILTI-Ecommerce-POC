@@ -7,12 +7,6 @@ public class ItemARPage : MonoBehaviour
     private int itemId;
     public int currentId { get { return itemId; } }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void ReturnMainMenu()
     {
         AppManager.Instance.GoToPage(PageName.MainMenu);
