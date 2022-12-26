@@ -67,7 +67,7 @@ public class ProductDetailPage : MonoBehaviour
         {
             setPanel();
         }
-        LayoutRebuilder.ForceRebuildLayoutImmediate(contentPanel);
+        //LayoutRebuilder.ForceRebuildLayoutImmediate(contentPanel);
     }
 
     public void SetPackagePrice(int arrayPos)
