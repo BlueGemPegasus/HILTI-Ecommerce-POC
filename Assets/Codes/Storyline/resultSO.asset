@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 835f464de5ca06e4cbbaa6d3e7f9e7a3, type: 3}
+  m_Name: resultSO
+  m_EditorClassIdentifier: 
+  resultText:
+  - "Mr City Council: \u201CMission failed. Time to dust yourself off and try again
+    Bob! You can visit the virtual store to learn more about Hilti tools"
+  - "Mr City Council: \n\u201CYOU HAVE REBUILD THE CITY! We would offer you a bigger
+    project!\u201D  VOUCHER CODE: UPM1"
+  avatarImage:
+  - {fileID: 21300000, guid: 4157d393b2e5eea4fba6eac0e2dbdce9, type: 3}
+  - {fileID: 21300000, guid: bde938c3d88a01c4db305dd5d4da060f, type: 3}
+  restartText1:
+  - NEXT
+  - RESTART

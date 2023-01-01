@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a92dd1ff15355184e8467078884f6aec, type: 3}
+  m_Name: pippingSO
+  m_EditorClassIdentifier: 
+  situationTextTitle: CURRENT SITUATION
+  situationText: The city ran out of water again. It looks like a section of the
+    piping has corroded and needs to be replaced. You pull out your trusty Hilti
+    tools and get to work!
+  spriteImage:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  questionText:
+  - You are in a place without electricity and need to use the tool for >3 hours,
+    what type of battery choices would you select for your tool?
+  - Oh no! The battery just went out, how would you recharge your battery?
+  - "Mr City Council: \u201CCongratulations! You fix the pipping! Now we have enough
+    water for the city!\u201D"
+  questionImage: {fileID: 0}
+  answerText1:
+  - USE CORD
+  - POINT A
+  answerText2:
+  - B36 5.2
+  - POINT B
+  answerText3:
+  - B36 2.6
+  - POINT C
+  passText: "Mr City Council: \u201CCongratulations! You fix the pipping! Now we
+    have enough water for the city!\u201D"
+  avatarImage:
+  - {fileID: 21300000, guid: 17cd3b7ffcdb93741b79ce1acd5d761e, type: 3}
+  - {fileID: 21300000, guid: ee809907bcc36fe4f8f41dcd53c7850f, type: 3}
+  - {fileID: 21300000, guid: 768ab582b5abdcf44b7e8c2fc34a393f, type: 3}

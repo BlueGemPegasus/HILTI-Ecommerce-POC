@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77b49c3ca63d9fc46a8a6cbac0d43532, type: 3}
+  m_Name: storyStart
+  m_EditorClassIdentifier: 
+  storyText:
+  - "Bob: \u201CHello! My name is Bob the Builder and I love to help people and fix
+    things around town!\u201D"
+  - "Bob: \u201CI choose the right tools and equipment  for different repair and
+    constructions.\u201D"
+  - "Bob: \u201CEvery time I choose the right tools you will be rewarded with points.
+    These points help you win rewards and unlock new levels\u201D"
+  - "Bob: \u201CEvery time I choose the right tools you will be rewarded with points.
+    These points help you win rewards and unlock new levels\u201D"
+  - "Bob: \u201CYour role is to help me to answer the right questions. But be careful,
+    for the wrong answers, points will be deducted\u201D"
+  - "Bob: \u201CYour role is to help me to answer the right questions. But be careful,
+    for the wrong answers, points will be deducted\u201D"
+  - "Mr City Council: \u201CHi Bob! Welcome to the City of H. We need your help with
+    a Renovation  project.\u201D"
+  - "Mr City Council: \u201CThe building is in disrepair and requires repairs for
+    structural, electrical and plumbing . Are you ready to kickstart your fix?\u201D"
+  spriteImage:
+  - {fileID: 21300000, guid: 8ff4def9bb8f1054da8bb2e4b27877d0, type: 3}
+  - {fileID: 21300000, guid: 17cd3b7ffcdb93741b79ce1acd5d761e, type: 3}
+  - {fileID: 21300000, guid: 6a2c006eea9eaaf46841bd9b658695c5, type: 3}
+  - {fileID: 21300000, guid: ee809907bcc36fe4f8f41dcd53c7850f, type: 3}
+  - {fileID: 21300000, guid: 29e0c2e611d46994c9136e9a9173d004, type: 3}
+  - {fileID: 21300000, guid: b084f427adf66f441b6d749355845496, type: 3}
+  - {fileID: 21300000, guid: bd193e8c4fb350a4db28bb93e7cc5b73, type: 3}
+  - {fileID: 21300000, guid: 4157d393b2e5eea4fba6eac0e2dbdce9, type: 3}
