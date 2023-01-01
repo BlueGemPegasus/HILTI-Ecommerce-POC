@@ -127,7 +127,7 @@ public class ARObjectPlaceCode : MonoBehaviour
         // Destroy all of the tools spawned in Content
         foreach (Transform childObject in content)
         {
-            Destroy(childObject);
+            Destroy(childObject.gameObject);
         }
 
     }

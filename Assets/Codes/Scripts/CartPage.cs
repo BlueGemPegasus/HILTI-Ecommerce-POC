@@ -17,17 +17,21 @@ public class CartPage : MonoBehaviour
 
     [Header("Model")]
     public ItemHolder allitem;
+    //public CartHolder cartList;
+
+    public List<CartsItem> cartList;
 
     // To store the Data where the player Press Add To Cart
     public int[] itemIDList;
 
     public GameObject cartComponentCardPrefab;
     public RectTransform cartContent;
+    public GameObject tallyPanel;
 
 
     private void OnEnable()
     {
-
+        UpdateCart();
     }
 
     private void OnDisable()
@@ -35,27 +39,27 @@ public class CartPage : MonoBehaviour
 
     }
 
+
+
     private void UpdateCart()
     {
-        if (itemIDList != null)
+        if (cartList != null)
         {
-            foreach (Item itemData in allitem.Items)
+            foreach(CartsItem cartItem in cartList)
             {
-                foreach (int i in itemIDList)
+                foreach (Item item in allitem.Items)
                 {
-                    if (i == itemData.itemId)
+                    if(cartItem.id == item.itemId)
                     {
                         CartComponentCard component = Instantiate(cartComponentCardPrefab, cartContent).GetComponent<CartComponentCard>();
-                        component.toolImage.sprite = itemData.itemSprite;
+                        component.toolImage.sprite = item.itemSprite;
+                        component.toolName.text = item.nameTxt;
+                        component.quantity.text = cartItem.quantity.ToString();
+                        component.toolpackagePrice.text = (cartItem.quantity * cartItem.price).ToString();
                     }
-                    
-                }
+                } 
+                
             }
         }
-    }
-
-    private void CheckCartIfEmpty()
-    {
-
     }
 }

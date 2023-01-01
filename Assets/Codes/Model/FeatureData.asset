@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b96698678d056145be88e69a7cc812b, type: 3}
+  m_Name: FeatureData
+  m_EditorClassIdentifier: 
+  dustShieldDescription: Virtually dustless drilling with the DRS-6-A dust removal
+    system.
+  insertToolUnlockDescription: Occasional drilling in wood and steel with optional
+    quick-release chuck. Screwdriving using the special bit holder with TE-C (SDS
+    Plus) connection end.
+  controlSwtichDescription: Extremely powerful rotary hammer, designed for serial
+    concrete drilling.
+  gripDescription: Very convenient and lightweight for superior handling.
+  functionSelectorDescription: Select from multiple modes to suit your construction
+    needs.
+  sideHandleDescription: Active Vibration Reduction (AVR) system designed to increase
+    user comfort and productivity.
+  lightButtonDescription: Light chiselling to illuminate the work area.
+  batteryButtonDescription: High run time flexibility thanks to powerful and fast-charging
+    36V Li-Ion batteries.
+  InsertToolUnlockingAddOnImage:
+  - {fileID: 21300000, guid: dba2a8316229e9d48866aab7fbb44ba7, type: 3}
+  - {fileID: 21300000, guid: c8a5ae94432eb004eafe70149edb38f7, type: 3}
+  - {fileID: 21300000, guid: 91196c1a01d8de4439bf7936c2a0cb99, type: 3}
+  InsertToolUnlockingAddOnDescription:
+  - 'QUICK-RELEASE CHUCK PACKED
+
+    Chucks with SDS Plus or SDS Top connection ends
+    and keyless quick-release chucks for Hilti rotary hammers with chuck interface'
+  - 'TE-CD (SDS PLUS) METRIC HAMMER DRILL BIT
+
+    Ultimate SDS Plus (TE-C) hammer
+    drill bit for virtually dust-free drilling in concrete'
+  - 'ANGULAR CHUCK TE-AC 2
+
+    Chucks with SDS Plus or SDS Top connection ends and
+    keyless quick-release chucks for Hilti rotary hammers with chuck interface'
+  BatteryAddOnImage:
+  - {fileID: 21300000, guid: 4c33ef575347e7343b7fe7d35244cb56, type: 3}
+  - {fileID: 21300000, guid: ddc7a4ebe3af75e4aab8af9c9b1b45cb, type: 3}
+  - {fileID: 21300000, guid: 83a9ab6a6ff62574792ca5008dfb448f, type: 3}
+  BatteryAddOnDescription:
+  - 'B36 2.6 36V BATTERY
+
+    High-power 36V 2.6 Ah Li-ion battery
+
+    More compact,
+    lightweight high-capacity battery providing the run time needed for demanding
+    applications'
+  - 'B36 5.2 36V BATTERY
+
+    Ultimate-power 36V 5.2 Ah Li-ion battery
+
+    High-capacity
+    battery providing extreme run time for highly demanding applications'
+  - 'C4/36-350 FAST CHARGER
+
+    Fast charger to quickly charge all Hilti Li-ion
+    batteries thanks to the max output of 9A and 350W
+
+    Designed to help protect
+    batteries from low voltage and other adverse charging conditions
+
+'
+  DustShieldAddOnImage:
+  - {fileID: 21300000, guid: cdf05f16c7d46a34797412c39795049a, type: 3}
+  - {fileID: 21300000, guid: 56ff7bda0eb7dc94f8f318825bc9227a, type: 3}
+  - {fileID: 21300000, guid: 5760e9a2dce717f41bb41eb69807ca06, type: 3}
+  DustShieldAddOnDescription:
+  - 'TE DRS-6-A (02) DUST REMOVAL SYSTEM
+
+    On-board vacuum system for convenient
+    dust collection
+
+    Built-in motor for maximum system efficiency, removes 97%
+    of dust'
+  - 'TE DRS-D DUST REMOVAL SYSTEM
+
+    Dust removal system for concrete and masonry
+    drilling with all rotary hammers'
+  - 'DCD DUST COLLECTOR
+
+    Dust collector for convenient overhead drilling'

@@ -4,6 +4,8 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 using System.Linq;
+using System.Globalization;
+
 public class ProductDetailPage : MonoBehaviour
 {
     public ItemHolder allItem;
@@ -16,9 +18,12 @@ public class ProductDetailPage : MonoBehaviour
     public TMP_Dropdown packageList;
     public TextMeshProUGUI toolDetailText;
 
-    public RectTransform contentPanel;
+    public Button addToCartButton;
 
-    public CartPage cartPage;
+    public CartPage cartHolder;
+
+    private int _itemId;
+    private float _price;
 
     //Quantity Panel
     [Tooltip("Quantity Panel")]
@@ -29,7 +34,7 @@ public class ProductDetailPage : MonoBehaviour
 
     //test
     public int id = 10;
-    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -41,7 +46,7 @@ public class ProductDetailPage : MonoBehaviour
     {
         itemImg.sprite = item.itemSprite;
         toolNameText.text = item.nameTxt;
-        
+
         toolDescriptionText.text = item.descriptionTxt;
         toolDetailText.text = item.toolDetailDescription;
 
@@ -62,9 +67,10 @@ public class ProductDetailPage : MonoBehaviour
 
     public void SetSelectedItem(int id)
     {
-        item = allItem.Items.FirstOrDefault(x=>x.itemId == id);
-        if(item != null)
+        item = allItem.Items.FirstOrDefault(x => x.itemId == id);
+        if (item != null)
         {
+            _itemId = id;
             setPanel();
         }
         //LayoutRebuilder.ForceRebuildLayoutImmediate(contentPanel);
@@ -73,17 +79,18 @@ public class ProductDetailPage : MonoBehaviour
     public void SetPackagePrice(int arrayPos)
     {
         //check is the item exist
-        if(item != null)
+        if (item != null)
         {
             //check is the array position exist
-            if(item.packageList.Count > arrayPos)
-            priceText.text = item.packageList[arrayPos].packagePrice;
+            if (item.packageList.Count > arrayPos)
+                priceText.text = item.packageList[arrayPos].packagePrice;
         }
     }
 
     private void OnEnable()
     {
         DropDownAction.getPackagePrice += SetPackagePrice;
+        addToCartButton.onClick.AddListener(AddToCart);
         //increaseBtn.onClick.AddListener(() => IncreaseQuantity());
         //decreaseBtn.onClick.AddListener(() => DecreaseQuantity());
     }
@@ -91,6 +98,7 @@ public class ProductDetailPage : MonoBehaviour
     private void OnDisable()
     {
         DropDownAction.getPackagePrice -= SetPackagePrice;
+        addToCartButton.onClick.RemoveAllListeners();
         //increaseBtn.onClick.RemoveListener(() => IncreaseQuantity());
         //decreaseBtn.onClick.RemoveListener(() => DecreaseQuantity());
     }
@@ -110,7 +118,7 @@ public class ProductDetailPage : MonoBehaviour
     public void DecreaseQuantity()
     {
         int previousQuantity = GetCurrentQuantity();
-        quantityText.text = Mathf.Clamp((previousQuantity - 1),0,99).ToString();
+        quantityText.text = Mathf.Clamp((previousQuantity - 1), 0, 99).ToString();
     }
 
     public void ReturnMainMenu()
@@ -125,6 +133,34 @@ public class ProductDetailPage : MonoBehaviour
 
     private void AddToCart()
     {
+        if (quantityText.text == "0")
+            return;
 
+        var cartItemScriptableObject = ScriptableObject.CreateInstance<CartsItem>();
+        cartItemScriptableObject.price = float.Parse(priceText.text.Replace("RM ", "").Replace(",", ""));
+        cartItemScriptableObject.quantity = int.Parse(quantityText.text);
+        cartItemScriptableObject.id = _itemId;
+
+        if (cartHolder.cartList.Count != 0)
+        {
+            foreach (CartsItem items in cartHolder.cartList)
+            {
+                if (cartItemScriptableObject.id == items.id)
+                {
+                    if (cartItemScriptableObject.price == float.Parse(priceText.text.Replace("RM ", "").Replace(",", "")))
+                    {
+                        items.quantity += cartItemScriptableObject.quantity;
+                        return;
+                    }
+                }
+                else
+                {
+                    cartHolder.cartList.Add(cartItemScriptableObject);
+                    return;
+                }
+            }
+        }
+
+        cartHolder.cartList.Add(cartItemScriptableObject);
     }
 }

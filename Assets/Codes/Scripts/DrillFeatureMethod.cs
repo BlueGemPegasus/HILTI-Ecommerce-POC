@@ -6,165 +6,125 @@ using TMPro;
 
 public class DrillFeatureMethod : MonoBehaviour
 {
-    [TextArea]
-    public string dustShieldDescription;
+    [Header("Model or Database")]
+    public FeatureSO featureData;
+    public OverviewSO overviewData;
 
-    [TextArea]
-    public string insertToolUnlockDescription;
-
-    [TextArea]
-    public string controlSwtichDescription;
-
-    [TextArea]
-    public string gripDescription;
-
-    [TextArea]
-    public string functionSelectorDescription;
-
-    [TextArea]
-    public string sideHandleDescription;
-
-    [TextArea]
-    public string lightButtonDescription;
-
-    [TextArea]
-    public string batteryButtonDescription;
-
+    [Header("Reference for Display")]
+    [Tooltip("The whole panel that house the description and addon component")]
     public GameObject descriptionPanel;
-
+    [Tooltip("The text of feature and overview.")]
     public TextMeshProUGUI descriptionText;
-
+    [Tooltip("The all feature button component reference")]
     public FeatureComponent featureComponent;
-
+    [Tooltip("The place where the Add On component card to spawn in.")]
     public RectTransform AddOnContentPlace;
+    [Tooltip("The all overview button component reference")]
+    public OverviewComponent overviewComponent;
 
+    [Header("The item Prefab to Spawn")]
+    [Tooltip("This item prefab is spawn for the feature view about Item Add On.")]
     public GameObject AddOnComponentPrefab;
-
-    public Sprite[] InsertToolUnlockingAddOnImage;
-
-    [TextArea]
-    public string[] InsertToolUnlockingAddOnDescription;
-
-    public Sprite[] BatteryAddOnImage;
-
-    [TextArea]
-    public string[] BatteryAddOnDescription;
-
-    public Sprite[] DustShieldAddOnImage;
-
-    [TextArea]
-    public string[] DustShieldAddOnDescription;
 
     private void OnEnable()
     {
-        featureComponent.dustShieldButton.onClick.AddListener(DustShieldButtonFunction);
-        featureComponent.insertToolUnlockButton.onClick.AddListener(InsertToolUnlockButtonFunction);
-        featureComponent.controlSwitchButto.onClick.AddListener(ControlSwtichButtonFunction);
-        featureComponent.gripButton.onClick.AddListener(GripButtonFunction);
-        featureComponent.functionSelectorButton.onClick.AddListener(FunctionSelectorButtonFunction);
-        featureComponent.sideHandleButton.onClick.AddListener(SideHandleButtonFunction);
-        featureComponent.lightButton.onClick.AddListener(LightButtonFunction);
-        featureComponent.batteryButton.onClick.AddListener(BatteryButtonFunction);
+        EnableFeatureButton();
+        EnableOverviewButton();
     }
 
     private void OnDisable()
     {
-        featureComponent.dustShieldButton.onClick.RemoveAllListeners();
-        featureComponent.insertToolUnlockButton.onClick.RemoveAllListeners();
-        featureComponent.controlSwitchButto.onClick.RemoveAllListeners();
-        featureComponent.gripButton.onClick.RemoveAllListeners();
-        featureComponent.functionSelectorButton.onClick.RemoveAllListeners();
-        featureComponent.sideHandleButton.onClick.RemoveAllListeners();
-        featureComponent.lightButton.onClick.RemoveAllListeners();
-        featureComponent.batteryButton.onClick.RemoveAllListeners();
+        DisableFeatureButton();
+        DisableOverviewButton();
     }
 
+    #region FeatureButtonMethod
     private void DustShieldButtonFunction()
     {
         Clear();
-        for (int i = 0; i < InsertToolUnlockingAddOnImage.Length; i++)
+        for (int i = 0; i < featureData.InsertToolUnlockingAddOnImage.Length; i++)
         {
             AddOnComponentCard component = Instantiate(AddOnComponentPrefab, AddOnContentPlace).GetComponent<AddOnComponentCard>();
-            component.image.sprite = DustShieldAddOnImage[i];
-            component.text.text = DustShieldAddOnDescription[i];
+            component.image.sprite = featureData.DustShieldAddOnImage[i];
+            component.text.text = featureData.DustShieldAddOnDescription[i];
         }
-        descriptionText.text = dustShieldDescription;
+        descriptionText.text = featureData.dustShieldDescription;
         descriptionPanel.SetActive(true);
     }
 
     private void InsertToolUnlockButtonFunction()
     {
         Clear();
-        for(int i = 0; i < InsertToolUnlockingAddOnImage.Length; i++)
+        for (int i = 0; i < featureData.InsertToolUnlockingAddOnImage.Length; i++)
         {
             AddOnComponentCard component = Instantiate(AddOnComponentPrefab, AddOnContentPlace).GetComponent<AddOnComponentCard>();
-            component.image.sprite = BatteryAddOnImage[i];
-            component.text.text = BatteryAddOnDescription[i];
+            component.image.sprite = featureData.BatteryAddOnImage[i];
+            component.text.text = featureData.BatteryAddOnDescription[i];
         }
-        descriptionText.text = insertToolUnlockDescription;
+        descriptionText.text = featureData.insertToolUnlockDescription;
         descriptionPanel.SetActive(true);
     }
 
     private void ControlSwtichButtonFunction()
     {
         Clear();
-        descriptionText.text = controlSwtichDescription;
+        descriptionText.text = featureData.controlSwtichDescription;
         descriptionPanel.SetActive(true);
     }
 
     private void GripButtonFunction()
     {
         Clear();
-        descriptionText.text = gripDescription;
+        descriptionText.text = featureData.gripDescription;
         descriptionPanel.SetActive(true);
     }
 
     private void FunctionSelectorButtonFunction()
     {
         Clear();
-        descriptionText.text = functionSelectorDescription;
+        descriptionText.text = featureData.functionSelectorDescription;
         descriptionPanel.SetActive(true);
     }
 
     private void SideHandleButtonFunction()
     {
         Clear();
-        descriptionText.text = sideHandleDescription;
+        descriptionText.text = featureData.sideHandleDescription;
         descriptionPanel.SetActive(true);
     }
 
     private void LightButtonFunction()
     {
         Clear();
-        descriptionText.text = lightButtonDescription;
+        descriptionText.text = featureData.lightButtonDescription;
         descriptionPanel.SetActive(true);
     }
 
     private void BatteryButtonFunction()
     {
         Clear();
-        for (int i = 0; i < InsertToolUnlockingAddOnImage.Length; i++)
+        for (int i = 0; i < featureData.InsertToolUnlockingAddOnImage.Length; i++)
         {
             AddOnComponentCard component = Instantiate(AddOnComponentPrefab, AddOnContentPlace).GetComponent<AddOnComponentCard>();
-            component.image.sprite = InsertToolUnlockingAddOnImage[i];
-            component.text.text = InsertToolUnlockingAddOnDescription[i];
+            component.image.sprite = featureData.InsertToolUnlockingAddOnImage[i];
+            component.text.text = featureData.InsertToolUnlockingAddOnDescription[i];
         }
-        descriptionText.text = batteryButtonDescription;
+        descriptionText.text = featureData.batteryButtonDescription;
         descriptionPanel.SetActive(true);
 
     }
 
     private void Clear()
     {
-        foreach(RectTransform children in AddOnContentPlace)
+        foreach (RectTransform children in AddOnContentPlace)
         {
             Destroy(children.gameObject);
         }
         descriptionPanel.SetActive(false);
-        AllButtonEnable();
+        //AllFeatureButtonEnable();
     }
 
-    private void AllButtonEnable()
+    private void AllFeatureButtonEnable()
     {
         featureComponent.dustShieldButton.enabled = true;
         featureComponent.insertToolUnlockButton.enabled = true;
@@ -176,4 +136,58 @@ public class DrillFeatureMethod : MonoBehaviour
         featureComponent.batteryButton.enabled = true;
     }
 
+    private void EnableFeatureButton()
+    {
+        featureComponent.dustShieldButton.onClick.AddListener(DustShieldButtonFunction);
+        featureComponent.insertToolUnlockButton.onClick.AddListener(InsertToolUnlockButtonFunction);
+        featureComponent.controlSwitchButto.onClick.AddListener(ControlSwtichButtonFunction);
+        featureComponent.gripButton.onClick.AddListener(GripButtonFunction);
+        featureComponent.functionSelectorButton.onClick.AddListener(FunctionSelectorButtonFunction);
+        featureComponent.sideHandleButton.onClick.AddListener(SideHandleButtonFunction);
+        featureComponent.lightButton.onClick.AddListener(LightButtonFunction);
+        featureComponent.batteryButton.onClick.AddListener(BatteryButtonFunction);
+    }
+
+    private void DisableFeatureButton()
+    {
+        featureComponent.dustShieldButton.onClick.RemoveAllListeners();
+        featureComponent.insertToolUnlockButton.onClick.RemoveAllListeners();
+        featureComponent.controlSwitchButto.onClick.RemoveAllListeners();
+        featureComponent.gripButton.onClick.RemoveAllListeners();
+        featureComponent.functionSelectorButton.onClick.RemoveAllListeners();
+        featureComponent.sideHandleButton.onClick.RemoveAllListeners();
+        featureComponent.lightButton.onClick.RemoveAllListeners();
+        featureComponent.batteryButton.onClick.RemoveAllListeners();
+    }
+    #endregion
+
+    #region OverviewButtonMethod
+    private void EnableOverviewButton()
+    {
+        for (int buttonArrayCount = 0; buttonArrayCount < overviewComponent.overviewButtons.Length; buttonArrayCount++)
+        {
+            if (overviewComponent.overviewButtons[buttonArrayCount] != null)
+                CallOverviewFeatureAccordingToArray(overviewComponent.overviewButtons[buttonArrayCount], buttonArrayCount);
+        }
+    }
+
+    private void DisableOverviewButton()
+    {
+        foreach (Button ovButton in overviewComponent.overviewButtons)
+        {
+            ovButton.onClick.RemoveAllListeners();
+        }
+    }
+
+    private void CallOverviewFeatureAccordingToArray(Button button, int arrayNumber)
+    {
+        Clear();
+        button.onClick.AddListener(() =>
+        {
+            descriptionText.text = overviewData.overviewArray[arrayNumber];
+            descriptionPanel.SetActive(true);
+        });
+        
+    }
+    #endregion
 }

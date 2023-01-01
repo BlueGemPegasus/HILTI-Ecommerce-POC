@@ -403,19 +403,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5004986131450004310}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 9016017388566183767}
-        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &4468249690266632910
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -669,6 +657,7 @@ GameObject:
   - component: {fileID: 7784534370761375741}
   - component: {fileID: 430834556294258204}
   - component: {fileID: 2378473845314152854}
+  - component: {fileID: 4138922975108198803}
   m_Layer: 5
   m_Name: OverviewPanel
   m_TagString: Untagged
@@ -736,6 +725,31 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &4138922975108198803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1540478030600599009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b6f0ed7cbd69da4daeb3a8e482de482, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  overviewButtons:
+  - {fileID: 148023006212427753}
+  - {fileID: 737855209574321808}
+  - {fileID: 3686376077912767945}
+  - {fileID: 1818222770891419523}
+  - {fileID: 8917383458675605766}
+  - {fileID: 2435398714482543607}
+  - {fileID: 4888866205170336101}
+  - {fileID: 732226345505088058}
+  - {fileID: 6175185257321399740}
+  - {fileID: 7325259168698474586}
+  - {fileID: 7877463395324937675}
+  - {fileID: 1195191366600769167}
 --- !u!1 &1661961837977471241
 GameObject:
   m_ObjectHideFlags: 0
@@ -1161,19 +1175,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4392076599823108474}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2257341874699400599}
-        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &4542437644464883
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1228,7 +1230,7 @@ RectTransform:
   - {fileID: 7050117509805742228}
   - {fileID: 8658907186536440054}
   m_Father: {fileID: 4481244374517599167}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1566,19 +1568,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 77851012976614282}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &371052343383251270
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1714,19 +1704,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4403318835651488784}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6217104174391462332}
-        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &8507812994495077289
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2412,19 +2390,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4104814123492123055}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 983883715207036112}
-        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &3465347216026231066
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2711,19 +2677,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1330524149739134982}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 3165370782568560397}
-        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1220539972980113195
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2774,7 +2728,7 @@ RectTransform:
   - {fileID: 8532297259646369914}
   - {fileID: 4564600702995067808}
   m_Father: {fileID: 4481244374517599167}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -2905,8 +2859,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2506249628967642432}
   - {fileID: 5791256338921643123}
+  - {fileID: 2506249628967642432}
   - {fileID: 7784534370761375741}
   m_Father: {fileID: 3638701488735122069}
   m_RootOrder: 0
@@ -2989,90 +2943,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89c87d924fa04ec499a6da85f856942e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dustShieldDescription: Virtually dustless drilling with the DRS-6-A dust removal
-    system.
-  insertToolUnlockDescription: "Occasional drilling in wood and steel with optional
-    quick-release chuck. Screwdriving using the special bit holder with TE-C (SDS
-    Plus) connection end.\t"
-  controlSwtichDescription: Extremely powerful rotary hammer, designed for serial
-    concrete drilling.
-  gripDescription: Very convenient and lightweight for superior handling.
-  functionSelectorDescription: Select from multiple modes to suit your construction
-    needs.
-  sideHandleDescription: Active Vibration Reduction (AVR) system designed to increase
-    user comfort and productivity.
-  lightButtonDescription: Light chiselling to illuminate the work area.
-  batteryButtonDescription: High run time flexibility thanks to powerful and fast-charging
-    36V Li-Ion batteries.
+  featureData: {fileID: 11400000, guid: e4672eebefacf704f96bb9238ac73362, type: 2}
+  overviewData: {fileID: 11400000, guid: d376ed20a8bab624ea5ae41fd56640a2, type: 2}
   descriptionPanel: {fileID: 4985549299005432664}
   descriptionText: {fileID: 7920931322711015877}
   featureComponent: {fileID: 3172994107954149369}
   AddOnContentPlace: {fileID: 4564600702995067808}
+  overviewComponent: {fileID: 4138922975108198803}
   AddOnComponentPrefab: {fileID: 5178432606252006853, guid: a5d371aeae61231448ef2e0ab2008bcb,
     type: 3}
-  InsertToolUnlockingAddOnImage:
-  - {fileID: 21300000, guid: dba2a8316229e9d48866aab7fbb44ba7, type: 3}
-  - {fileID: 21300000, guid: c8a5ae94432eb004eafe70149edb38f7, type: 3}
-  - {fileID: 21300000, guid: 91196c1a01d8de4439bf7936c2a0cb99, type: 3}
-  InsertToolUnlockingAddOnDescription:
-  - 'QUICK-RELEASE CHUCK PACKED
-
-    Chucks with SDS Plus or SDS Top connection ends
-    and keyless quick-release chucks for Hilti rotary hammers with chuck interface'
-  - 'TE-CD (SDS PLUS) METRIC HAMMER DRILL BIT
-
-    Ultimate SDS Plus (TE-C) hammer
-    drill bit for virtually dust-free drilling in concrete'
-  - 'ANGULAR CHUCK TE-AC 2
-
-    Chucks with SDS Plus or SDS Top connection ends and
-    keyless quick-release chucks for Hilti rotary hammers with chuck interface'
-  BatteryAddOnImage:
-  - {fileID: 21300000, guid: 4c33ef575347e7343b7fe7d35244cb56, type: 3}
-  - {fileID: 21300000, guid: ddc7a4ebe3af75e4aab8af9c9b1b45cb, type: 3}
-  - {fileID: 21300000, guid: 83a9ab6a6ff62574792ca5008dfb448f, type: 3}
-  BatteryAddOnDescription:
-  - 'B36 2.6 36V BATTERY
-
-    High-power 36V 2.6 Ah Li-ion battery
-
-    More compact,
-    lightweight high-capacity battery providing the run time needed for demanding
-    applications'
-  - 'B36 5.2 36V BATTERY
-
-    Ultimate-power 36V 5.2 Ah Li-ion battery
-
-    High-capacity
-    battery providing extreme run time for highly demanding applications'
-  - 'C4/36-350 FAST CHARGER
-
-    Fast charger to quickly charge all Hilti Li-ion
-    batteries thanks to the max output of 9A and 350W
-
-    Designed to help protect
-    batteries from low voltage and other adverse charging conditions
-
-'
-  DustShieldAddOnImage:
-  - {fileID: 21300000, guid: cdf05f16c7d46a34797412c39795049a, type: 3}
-  - {fileID: 21300000, guid: 56ff7bda0eb7dc94f8f318825bc9227a, type: 3}
-  - {fileID: 21300000, guid: 5760e9a2dce717f41bb41eb69807ca06, type: 3}
-  DustShieldAddOnDescription:
-  - 'TE DRS-6-A (02) DUST REMOVAL SYSTEM
-
-    On-board vacuum system for convenient
-    dust collection
-
-    Built-in motor for maximum system efficiency, removes 97%
-    of dust'
-  - 'TE DRS-D DUST REMOVAL SYSTEM
-
-    Dust removal system for concrete and masonry
-    drilling with all rotary hammers'
-  - 'DCD DUST COLLECTOR
-
-    Dust collector for convenient overhead drilling'
 --- !u!1 &5902455971762228423
 GameObject:
   m_ObjectHideFlags: 0
@@ -3648,19 +3527,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6137752684285729645}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 5130258313406828420}
-        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &27660237839200708
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4100,19 +3967,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5633754700955799652}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 9016017388566183767}
-        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &8129787788285250533
 MonoBehaviour:
   m_ObjectHideFlags: 0

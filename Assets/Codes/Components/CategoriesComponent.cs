@@ -15,7 +15,6 @@ public class CategoriesComponent : MonoBehaviour
 
     [Header("Scriptable")]
     public CategoriesHolder allCategories;
-    public Categories categories;
 
     [Header("Spawn At Target References")]
     public Transform categoryContent;
@@ -71,14 +70,6 @@ public class CategoriesComponent : MonoBehaviour
                     }
                 }
             }
-        }
-    }
-
-    public void SpawnItemToItemList()
-    {
-        if (CategoryList != null)
-        {
-
         }
     }
 

@@ -2953,7 +2953,8 @@ MonoBehaviour:
   packageNameText: {fileID: 1126659221983882253}
   packageList: {fileID: 3687072595674374696}
   toolDetailText: {fileID: 5066794567036254231}
-  contentPanel: {fileID: 0}
+  addToCartButton: {fileID: 0}
+  cartHolder: {fileID: 0}
   quantityText: {fileID: 996938166}
   id: 10
 --- !u!1 &3943702384802900243
@@ -3536,7 +3537,6 @@ GameObject:
   - component: {fileID: 6286550309700516240}
   - component: {fileID: 3004652521040043684}
   - component: {fileID: 6450706585484084838}
-  - component: {fileID: 353730297}
   m_Layer: 5
   m_Name: Footer
   m_TagString: Untagged
@@ -3623,27 +3623,6 @@ MonoBehaviour:
   m_FlexibleWidth: -1
   m_FlexibleHeight: 1.5
   m_LayoutPriority: 3
---- !u!223 &353730297
-Canvas:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4878998594612402293}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_RenderMode: 2
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
-  m_PixelPerfect: 0
-  m_ReceivesEvents: 1
-  m_OverrideSorting: 1
-  m_OverridePixelPerfect: 0
-  m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 25
-  m_SortingLayerID: 0
-  m_SortingOrder: 5
-  m_TargetDisplay: 0
 --- !u!1 &5092858494075023782
 GameObject:
   m_ObjectHideFlags: 0
