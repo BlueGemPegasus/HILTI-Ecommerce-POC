@@ -18,6 +18,7 @@ public class ARButtons : MonoBehaviour
     public Button toggleLightButton;
     [Tooltip("Add to Cart Button Reference")]
     public Button addToCartButton;
+    public string check;
 
     private GameObject toolsOnScene;
     private ARObjectComponent aRObjectComponent;
@@ -82,6 +83,7 @@ public class ARButtons : MonoBehaviour
     {
         SetInactiveEverything();
         aRObjectComponent.featurePanel.SetActive(true);
+        aRObjectComponent.descriptionText.text = check;
         aRObjectComponent.descriptionPanel.SetActive(true);
     }
 
@@ -89,6 +91,8 @@ public class ARButtons : MonoBehaviour
     {
         SetInactiveEverything();
         aRObjectComponent.overview.SetActive(true);
+        aRObjectComponent.descriptionText.text = check;
+        aRObjectComponent.descriptionPanel.SetActive(true);
     }
 
     private void ToggleDrillButtonOnClick()

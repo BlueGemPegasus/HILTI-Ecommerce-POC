@@ -14,14 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   overviewArray:
   - 'Dust shield '
-  - Chunk
-  - Insert tool unlocking device
+  - Chuck
+  - Insert for tool unlocking device
   - Function selector switch
-  - Forward/ Reverse switch with swith-on interlock
+  - Forward/Reverse switch with switch-on interlock
   - Control switch
   - Grip
   - 'Battery release buttons '
-  - Change status and fault display (Li-ion battery)
+  - Charge status and fault display (Li-ion battery)
   - Battery
   - Side handle
   - Light to illuminate the work area

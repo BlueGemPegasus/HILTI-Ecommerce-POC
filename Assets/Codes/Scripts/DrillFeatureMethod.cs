@@ -58,8 +58,8 @@ public class DrillFeatureMethod : MonoBehaviour
         for (int i = 0; i < featureData.InsertToolUnlockingAddOnImage.Length; i++)
         {
             AddOnComponentCard component = Instantiate(AddOnComponentPrefab, AddOnContentPlace).GetComponent<AddOnComponentCard>();
-            component.image.sprite = featureData.BatteryAddOnImage[i];
-            component.text.text = featureData.BatteryAddOnDescription[i];
+            component.image.sprite = featureData.InsertToolUnlockingAddOnImage[i];
+            component.text.text = featureData.InsertToolUnlockingAddOnDescription[i];
         }
         descriptionText.text = featureData.insertToolUnlockDescription;
         descriptionPanel.SetActive(true);
@@ -106,8 +106,8 @@ public class DrillFeatureMethod : MonoBehaviour
         for (int i = 0; i < featureData.InsertToolUnlockingAddOnImage.Length; i++)
         {
             AddOnComponentCard component = Instantiate(AddOnComponentPrefab, AddOnContentPlace).GetComponent<AddOnComponentCard>();
-            component.image.sprite = featureData.InsertToolUnlockingAddOnImage[i];
-            component.text.text = featureData.InsertToolUnlockingAddOnDescription[i];
+            component.image.sprite = featureData.BatteryAddOnImage[i];
+            component.text.text = featureData.BatteryAddOnDescription[i];
         }
         descriptionText.text = featureData.batteryButtonDescription;
         descriptionPanel.SetActive(true);
@@ -181,9 +181,10 @@ public class DrillFeatureMethod : MonoBehaviour
 
     private void CallOverviewFeatureAccordingToArray(Button button, int arrayNumber)
     {
-        Clear();
+        
         button.onClick.AddListener(() =>
         {
+            Clear();
             descriptionText.text = overviewData.overviewArray[arrayNumber];
             descriptionPanel.SetActive(true);
         });
