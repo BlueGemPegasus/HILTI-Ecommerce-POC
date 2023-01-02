@@ -12,21 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a92dd1ff15355184e8467078884f6aec, type: 3}
   m_Name: pippingSO
   m_EditorClassIdentifier: 
+  LevelName: Piping
   situationTextTitle: CURRENT SITUATION
   situationText: The city ran out of water again. It looks like a section of the
     piping has corroded and needs to be replaced. You pull out your trusty Hilti
     tools and get to work!
-  spriteImage:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  spriteImage: {fileID: 0}
   questionText:
   - You are in a place without electricity and need to use the tool for >3 hours,
     what type of battery choices would you select for your tool?
   - Oh no! The battery just went out, how would you recharge your battery?
   - "Mr City Council: \u201CCongratulations! You fix the pipping! Now we have enough
     water for the city!\u201D"
-  questionImage: {fileID: 0}
+  questionImage:
+  - {fileID: 0}
+  - {fileID: 21300000, guid: 436c3d05243f671488d5004034333825, type: 3}
   answerText1:
   - USE CORD
   - POINT A
@@ -36,8 +36,7 @@ MonoBehaviour:
   answerText3:
   - B36 2.6
   - POINT C
-  passText: "Mr City Council: \u201CCongratulations! You fix the pipping! Now we
-    have enough water for the city!\u201D"
+  correctAnswer: 0200000003000000
   avatarImage:
   - {fileID: 21300000, guid: 17cd3b7ffcdb93741b79ce1acd5d761e, type: 3}
   - {fileID: 21300000, guid: ee809907bcc36fe4f8f41dcd53c7850f, type: 3}

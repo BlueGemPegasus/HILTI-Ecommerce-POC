@@ -5,8 +5,9 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "situationSO", menuName ="ScriptableObjects/gamification/situation", order = 2)]
 
 public class SituationScriptableObject : ScriptableObject
-
 {
+    public string LevelName;
+
     //Situation
     [TextArea]
     public string situationTextTitle;
@@ -17,7 +18,7 @@ public class SituationScriptableObject : ScriptableObject
     //Question
     [TextArea]
     public string[] questionText;
-    public Sprite questionImage;
+    public Sprite[] questionImage;
     [TextArea]
     public string[] answerText1;
     [TextArea]
@@ -26,11 +27,6 @@ public class SituationScriptableObject : ScriptableObject
     public string[] answerText3;
     public int[] correctAnswer;
  
-
-
-    //Result
-    [TextArea]
-    public string passText;
     public Sprite [] avatarImage;
 
 }

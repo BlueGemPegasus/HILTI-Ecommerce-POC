@@ -23,6 +23,8 @@ public class ARObjectComponent : MonoBehaviour
     public GameObject descriptionPanel;
     [Tooltip("Description Text Reference")]
     public TextMeshProUGUI descriptionText;
+    [Tooltip("AudioSource Reference")]
+    public AudioSource drillingSound;
 
     private void OnEnable()
     {

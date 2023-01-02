@@ -40,6 +40,7 @@ public class ARButtons : MonoBehaviour
     private void OnDisable()
     {
         toolsOnScene = null;
+        aRObjectComponent.drillingSound.Stop();
         UnregisterButton();
     }
 
@@ -101,11 +102,13 @@ public class ARButtons : MonoBehaviour
         {
             DrillAnimation = true;
             aRObjectComponent.animator.SetBool("OnDrill", DrillAnimation);
+            aRObjectComponent.drillingSound.Play();
         }
         else
         {
             DrillAnimation = false;
             aRObjectComponent.animator.SetBool("OnDrill", DrillAnimation);
+            aRObjectComponent.drillingSound.Stop();
         }    
     }
 

@@ -12,21 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a92dd1ff15355184e8467078884f6aec, type: 3}
   m_Name: electricSO
   m_EditorClassIdentifier: 
+  LevelName: Electricity
   situationTextTitle: CURRENT SITUATION
   situationText: You have been tasked with repairing electrical  system for the city. 
     In this task you will need to answer questions relate to repairing electrical
     outlets and running new wires.
-  spriteImage:
-  - {fileID: 21300000, guid: 29e0c2e611d46994c9136e9a9173d004, type: 3}
-  - {fileID: 21300000, guid: fc0d598c5bd073847b14fe62ba06636c, type: 3}
-  - {fileID: 21300000, guid: 9f2cf90fc8a12e24dafb29a4cc1979ad, type: 3}
+  spriteImage: {fileID: 21300000, guid: 67b058dc7e4be344fbddbb04244bffcb, type: 3}
   questionText:
   - We will first need to fasten the electrical cables and conduits. Which of the
     following tool can be used to fasten cables?
   - 'Name the following Component:'
   - "Mr City Council: \u201CCongratulations! You did it Bob! Everyone in the City
     have electricity now!\u201D"
-  questionImage: {fileID: 21300000, guid: f5a58b2ef7b619744b07065b85daf873, type: 3}
+  questionImage:
+  - {fileID: 0}
+  - {fileID: 21300000, guid: f5a58b2ef7b619744b07065b85daf873, type: 3}
   answerText1:
   - MODEL SCM 22-A
   - SWITCH
@@ -36,8 +36,7 @@ MonoBehaviour:
   answerText3:
   - DUCTWORK MOUNTING
   - CHUCK
-  passText: "Mr City Council: \u201CCongratulations! You did it Bob! Everyone in
-    the City have electricity now!\u201D"
+  correctAnswer: 0200000003000000
   avatarImage:
   - {fileID: 21300000, guid: ee809907bcc36fe4f8f41dcd53c7850f, type: 3}
   - {fileID: 21300000, guid: fc0d598c5bd073847b14fe62ba06636c, type: 3}

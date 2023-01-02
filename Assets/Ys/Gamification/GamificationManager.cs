@@ -20,6 +20,8 @@ public class GamificationManager : MonoBehaviour
     public Button freelance;
     public Button enterShopBtn;
 
+    public Button bobChest;
+
     public Button closeOverlay;
 
 
@@ -79,6 +81,7 @@ public class GamificationManager : MonoBehaviour
         freelance.onClick.AddListener(()=>ShopInfoBtn(ShopType.Freelance));
         closeOverlay.onClick.AddListener(CloseOverlay);
         enterShopBtn.onClick.AddListener(OpenShop);
+        bobChest.onClick.AddListener(BobChest);
     }
 
     private void OnDisable()
@@ -89,6 +92,12 @@ public class GamificationManager : MonoBehaviour
         freelance.onClick.RemoveListener(() => ShopInfoBtn(ShopType.Freelance));
         closeOverlay.onClick.RemoveListener(CloseOverlay);
         enterShopBtn.onClick.RemoveListener(OpenShop);
+        bobChest.onClick.RemoveAllListeners();
+    }
+
+    private void BobChest()
+    {
+        AppManager.Instance.GoToPage(PageName.QuizGamification);
     }
 
     private void ShopInfoBtn(ShopType shop)

@@ -10,8 +10,5 @@ public class ResultScriptableObject : ScriptableObject
     [TextArea]
     public string [] resultText;
     public Sprite[] avatarImage;
-
-    [TextArea]
-    public string[] restartText1;
 }
    

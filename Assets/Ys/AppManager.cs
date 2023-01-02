@@ -11,7 +11,9 @@ public enum PageName
     ItemDetail = 2,
     Gamification = 3,
     ARPage = 4,
-    CartPage = 5
+    CartPage = 5,
+    QuizGamification = 6,
+    Skyscrapper = 7
        
 }
 
@@ -63,6 +65,12 @@ public class AppManager : MonoBehaviour
                 break;
             case PageName.CartPage:
                 obj = AllPage.FirstOrDefault(x => x.gameObject.name == "CartPage");
+                break;
+            case PageName.QuizGamification:
+                obj = AllPage.FirstOrDefault(x => x.gameObject.name == "QuizGamificationPage");
+                break;
+            case PageName.Skyscrapper:
+                obj = AllPage.FirstOrDefault(x => x.gameObject.name == "SkyscraperGamePage");
                 break;
         }
 

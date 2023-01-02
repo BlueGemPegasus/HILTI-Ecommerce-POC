@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using System;
+using System.Linq;
 
 public class GamificationController : MonoBehaviour
 {
@@ -16,8 +17,14 @@ public class GamificationController : MonoBehaviour
     [Header("Page Reference")]
     public GameObject storyLine;
     public GameObject gameMap;
-    public QuizController quizController;
     public GameObject quizPage;
+
+    [Header("Condition Checker")]
+    public int[] statusOfQuiz;
+
+    public Sprite winButton;
+
+    public QuizController quizController;
 
     int counter = 0;
 
@@ -87,6 +94,15 @@ public class GamificationController : MonoBehaviour
     {
         component.backButton.gameObject.SetActive(false);
         component.nextButtonText.text = "START";
+        
+        if(statusOfQuiz.All(x => x != 0))
+        {
+            storyLine.SetActive(false);
+            gameMap.SetActive(false);
+            quizPage.SetActive(true);
+        }
+        
+
         RegisterButton();
     }
 

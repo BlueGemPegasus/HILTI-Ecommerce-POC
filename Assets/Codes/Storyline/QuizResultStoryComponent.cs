@@ -9,5 +9,6 @@ public class QuizResultStoryComponent : MonoBehaviour
     public Image avatar;
     public TextMeshProUGUI resultText;
     public Button restartButton;
+    public TextMeshProUGUI nextRestartButtonText;
     public Button exitButton;
 }

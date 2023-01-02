@@ -12,13 +12,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a92dd1ff15355184e8467078884f6aec, type: 3}
   m_Name: constructionSO
   m_EditorClassIdentifier: 
+  LevelName: Construction
   situationTextTitle: CURRENT SITUATION
-  situationText: 
-  spriteImage: []
-  questionText: []
-  questionImage: {fileID: 0}
-  answerText1: []
-  answerText2: []
-  answerText3: []
-  passText: 
-  avatarImage: []
+  situationText: You are called upon to repair a damaged building in a busy city
+    center. The building is an important part of the community. Start by hacking
+    off the damaged pieces.
+  spriteImage: {fileID: 0}
+  questionText:
+  - The first step to repair the building is to use a tool for hacking. This tool
+    is to remove the debris of the leftover structure. Which tool is suitable for
+    that?
+  - "One of your  battery-actuated tool\u2019s nails are now blunt after using for
+    3 hours. Which are the suitable nail to replace it?"
+  - "Mr City Council: \u201CCongratulations! You fix the building! Now the citizens
+    can use it as the town hall\u201D"
+  questionImage: []
+  answerText1:
+  - MODEL GX-3
+  - X-P B3
+  answerText2:
+  - MODEL BX-3
+  - X-GHP
+  answerText3:
+  - MODEL  TE500
+  - X-GN
+  correctAnswer: 0300000001000000
+  avatarImage:
+  - {fileID: 21300000, guid: 8ff4def9bb8f1054da8bb2e4b27877d0, type: 3}
+  - {fileID: 21300000, guid: 6a2c006eea9eaaf46841bd9b658695c5, type: 3}
+  - {fileID: 21300000, guid: 33bfe41f400f14345af955ee6e17b2aa, type: 3}
