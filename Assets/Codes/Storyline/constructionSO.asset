@@ -17,7 +17,7 @@ MonoBehaviour:
   situationText: You are called upon to repair a damaged building in a busy city
     center. The building is an important part of the community. Start by hacking
     off the damaged pieces.
-  spriteImage: {fileID: 0}
+  spriteImage: {fileID: 21300000, guid: 5bc9e2299f6deac44bd5888dba94e081, type: 3}
   questionText:
   - The first step to repair the building is to use a tool for hacking. This tool
     is to remove the debris of the leftover structure. Which tool is suitable for
