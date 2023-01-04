@@ -107,6 +107,7 @@ public class ARButtons : MonoBehaviour
         }
         else
         {
+            SetInactiveEverything();
             DrillAnimation = false;
             aRObjectComponent.animator.SetBool("OnDrill", DrillAnimation);
             aRObjectComponent.drillingSound.Stop();
@@ -115,6 +116,10 @@ public class ARButtons : MonoBehaviour
 
     private void ToggleBatteryButtonOnClick()
     {
+        SetInactiveEverything();
+        DrillAnimation = false;
+        aRObjectComponent.animator.SetBool("OnDrill", DrillAnimation);
+        aRObjectComponent.drillingSound.Stop();
         aRObjectComponent.animator.SetTrigger("RemoveBattery");
     }
 
