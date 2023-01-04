@@ -35,7 +35,7 @@ public class GamificationController : MonoBehaviour
             component.nextButtonText.text = "NEXT"; 
             component.backButton.gameObject.SetActive(true);
         }
-        if (counter == 7)
+        if (counter == storySO.storyText.Length)
         {
             storyLine.SetActive(false);
             gameMap.SetActive(true);
