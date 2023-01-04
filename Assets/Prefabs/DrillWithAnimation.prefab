@@ -89,7 +89,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0.28, y: -0.03}
+  m_AnchoredPosition: {x: 0.28, y: -0.04}
   m_SizeDelta: {x: 0.28, y: 0}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &6040421681115389390
@@ -2681,8 +2681,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0.14, y: -0.015}
-  m_SizeDelta: {x: 0.28, y: 0.03}
+  m_AnchoredPosition: {x: 0.14, y: -0.02}
+  m_SizeDelta: {x: 0.28, y: 0.04}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8436275481351628898
 CanvasRenderer:
@@ -2712,7 +2712,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Press the White button to understand the tool more!
+  m_text: Press the White buttons to learn about the tool's features and parts!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5a0801cdd63f78542bcb234b4d00b8ed, type: 2}
   m_sharedMaterial: {fileID: -6552255164544111799, guid: 5a0801cdd63f78542bcb234b4d00b8ed,
@@ -2973,7 +2973,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: 0, y: 0.29003906}
-  m_SizeDelta: {x: 0.030000001, y: 0.03}
+  m_SizeDelta: {x: 0.030000001, y: 0.04}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!222 &3460731615895025706
 CanvasRenderer:

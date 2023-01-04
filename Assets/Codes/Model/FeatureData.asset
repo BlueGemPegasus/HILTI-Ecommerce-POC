@@ -12,11 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b96698678d056145be88e69a7cc812b, type: 3}
   m_Name: FeatureData
   m_EditorClassIdentifier: 
-  dustShieldDescription: Virtually dustless drilling with the DRS-6-A dust removal
+  dustShieldDescription: 'Virtually dustless drilling with the DRS-6-A dust removal
     system.
-  insertToolUnlockDescription: Occasional drilling in wood and steel with optional
+
+
+    Add on these accessories:'
+  insertToolUnlockDescription: 'Occasional drilling in wood and steel with optional
     quick-release chuck. Screwdriving using the special bit holder with TE-C (SDS
     Plus) connection end.
+
+
+    Add on these accessories:'
   controlSwtichDescription: Extremely powerful rotary hammer, designed for serial
     concrete drilling.
   gripDescription: Very convenient and lightweight for superior handling.
@@ -25,8 +31,11 @@ MonoBehaviour:
   sideHandleDescription: Active Vibration Reduction (AVR) system designed to increase
     user comfort and productivity.
   lightButtonDescription: Light chiselling to illuminate the work area.
-  batteryButtonDescription: High run time flexibility thanks to powerful and fast-charging
+  batteryButtonDescription: 'High run time flexibility thanks to powerful and fast-charging
     36V Li-Ion batteries.
+
+
+    Add on these accessories:'
   InsertToolUnlockingAddOnImage:
   - {fileID: 21300000, guid: dba2a8316229e9d48866aab7fbb44ba7, type: 3}
   - {fileID: 21300000, guid: c8a5ae94432eb004eafe70149edb38f7, type: 3}

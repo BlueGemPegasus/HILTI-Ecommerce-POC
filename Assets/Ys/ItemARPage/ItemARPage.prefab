@@ -434,8 +434,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Welcome to H+ AR!
 
-    Find a wide space, press the tool to enjoy a sample
-    of our tools demo!'
+    Find a wide space, drag the tool to position it,
+    and enjoy our tools demo!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3b2c1ead7a5e1434884d57e82ebcb8b4, type: 2}
   m_sharedMaterial: {fileID: 7820990755119651203, guid: 3b2c1ead7a5e1434884d57e82ebcb8b4,
@@ -1320,6 +1320,7 @@ MonoBehaviour:
   toggleBatteryButton: {fileID: 8587551307879890635}
   toggleLightButton: {fileID: 7703931749122615970}
   addToCartButton: {fileID: 1864710239161029938}
+  check: 
 --- !u!1 &7373449103084360460
 GameObject:
   m_ObjectHideFlags: 0
