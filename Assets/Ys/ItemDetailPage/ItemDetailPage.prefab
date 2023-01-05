@@ -2953,7 +2953,7 @@ MonoBehaviour:
   packageNameText: {fileID: 1126659221983882253}
   packageList: {fileID: 3687072595674374696}
   toolDetailText: {fileID: 5066794567036254231}
-  addToCartButton: {fileID: 0}
+  addToCartButton: {fileID: 592342459}
   cartHolder: {fileID: 0}
   quantityText: {fileID: 996938166}
   id: 10

@@ -2672,6 +2672,7 @@ GameObject:
   - component: {fileID: 7333404444868290148}
   - component: {fileID: 8188362927827858695}
   - component: {fileID: 1745268887}
+  - component: {fileID: 5716820553205712316}
   m_Layer: 5
   m_Name: SuggestedPanel
   m_TagString: Untagged
@@ -2750,6 +2751,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0306a7661de1bca4a80e4971716ee6cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  urlScript: {fileID: 5716820553205712316}
   itemImg: {fileID: 2458052554293793631}
   itemName: {fileID: 7631682790686718053}
   itemPrice: {fileID: 8727802787330142829}
@@ -2765,6 +2767,7 @@ MonoBehaviour:
   battery: {fileID: 4516381954841170813}
   categoryPanel: {fileID: 3556244833290468934}
   viewItem: {fileID: 5485745213110111265}
+  toHiltiLink: {fileID: 8923583713643072871}
   suggestionSo:
   - {fileID: 11400000, guid: 3e68b151e0ea19045bef05773dab94ac, type: 2}
   - {fileID: 11400000, guid: a7ca94c996511d044910f642cb7c539b, type: 2}
@@ -2773,6 +2776,19 @@ MonoBehaviour:
   allItem: {fileID: 11400000, guid: 9b2fedcf19369f64fb0dbfd638765355, type: 2}
   manager: {fileID: 1314702701}
   productDetailPage: {fileID: 0}
+--- !u!114 &5716820553205712316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1832890727840698525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 651c00dc804f6f949b340203b0a6427c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  URL: https://www.hilti.com.my/
 --- !u!1 &2112003115262562946
 GameObject:
   m_ObjectHideFlags: 0
@@ -11674,6 +11690,18 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 4866616999231752028}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8923583713643072871 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4062038488822712891, guid: 5a2688cb8b7068344896992b1e9c6de0,
+    type: 3}
+  m_PrefabInstance: {fileID: 4866616999231752028}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &8394158089976432154
 PrefabInstance:
   m_ObjectHideFlags: 0

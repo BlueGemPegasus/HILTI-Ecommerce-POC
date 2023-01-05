@@ -1356,6 +1356,7 @@ GameObject:
   - component: {fileID: 1539123848134829829}
   - component: {fileID: 1539123848134829830}
   - component: {fileID: 2529748106136165250}
+  - component: {fileID: 3766530174225321297}
   m_Layer: 5
   m_Name: CartPage
   m_TagString: Untagged
@@ -1439,12 +1440,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   allitem: {fileID: 11400000, guid: 9b2fedcf19369f64fb0dbfd638765355, type: 2}
-  cartList: {fileID: 11400000, guid: 52d69363e2debb544b54fef30b7f6c73, type: 2}
+  cartList:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   itemIDList: 
   cartComponentCardPrefab: {fileID: 1748546566184731537, guid: 82f42c91ce2bdde4d94bba39ec5f1aa7,
     type: 3}
   cartContent: {fileID: 1539123847952431769}
   tallyPanel: {fileID: 6959443664261558281}
+--- !u!114 &3766530174225321297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1539123848134829832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 651c00dc804f6f949b340203b0a6427c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  URL: https://www.hilti.com.my/c/CLS_CORDLESS_TOOLS_7123/CLS_CORDLESS_RTR_HAMMER_PLUS_7123/r4694033?combo_content=23fc09c58e1ffe0787f15362accf6f6b&itemCode=3583842
 --- !u!1 &1539123848254988543
 GameObject:
   m_ObjectHideFlags: 0
