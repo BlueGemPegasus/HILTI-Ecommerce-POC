@@ -101,13 +101,13 @@ public class ARButtons : MonoBehaviour
     {
         if(DrillAnimation == false)
         {
+            SetInactiveEverything();
             DrillAnimation = true;
             aRObjectComponent.animator.SetBool("OnDrill", DrillAnimation);
             aRObjectComponent.drillingSound.Play();
         }
         else
         {
-            SetInactiveEverything();
             DrillAnimation = false;
             aRObjectComponent.animator.SetBool("OnDrill", DrillAnimation);
             aRObjectComponent.drillingSound.Stop();
