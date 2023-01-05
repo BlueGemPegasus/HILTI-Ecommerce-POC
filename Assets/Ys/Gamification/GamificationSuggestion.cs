@@ -7,6 +7,8 @@ using System.Linq;
 
 public class GamificationSuggestion : MonoBehaviour
 {
+    public URLRegister urlScript;
+
     public Image itemImg;
     public TextMeshProUGUI itemName;
     public TextMeshProUGUI itemPrice;
@@ -29,6 +31,7 @@ public class GamificationSuggestion : MonoBehaviour
 
     //view item detail btn
     public Button viewItem;
+    public Button toHiltiLink;
 
     //store created game object in local
     private List<GameObject> suggestionList = new List<GameObject>();
@@ -54,6 +57,7 @@ public class GamificationSuggestion : MonoBehaviour
         inserts.onClick.AddListener(() => suggestionFilterBtn(2));
         battery.onClick.AddListener(() => suggestionFilterBtn(3));
         viewItem.onClick.AddListener(() => ViewSuggestedItem(currentSuggestion.suggestedItemId));
+        toHiltiLink.onClick.AddListener(urlScript.GoToURL);
         all.interactable = false;
         all.gameObject.transform.GetChild(0).GetComponent<TextMeshProUGUI>().color = Color.white;
     }
@@ -65,6 +69,7 @@ public class GamificationSuggestion : MonoBehaviour
         inserts.onClick.RemoveAllListeners();
         battery.onClick.RemoveAllListeners();
         viewItem.onClick.RemoveAllListeners();
+        toHiltiLink.onClick.RemoveAllListeners();
     }
 
     public void SetupSuggestionPage()

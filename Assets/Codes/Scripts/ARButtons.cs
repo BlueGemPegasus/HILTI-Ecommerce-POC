@@ -18,8 +18,12 @@ public class ARButtons : MonoBehaviour
     public Button toggleLightButton;
     [Tooltip("Add to Cart Button Reference")]
     public Button addToCartButton;
+    public Button leftButton;
+    public Button rightButton;
     public string check1;
     public string check2;
+
+    public int rotateSpeed = 1;
 
     private GameObject toolsOnScene;
     private ARObjectComponent aRObjectComponent;
@@ -62,6 +66,8 @@ public class ARButtons : MonoBehaviour
         toggleBatteryButton.onClick.AddListener(ToggleBatteryButtonOnClick);
         toggleLightButton.onClick.AddListener(ToggleLightButtonOnClick);
         addToCartButton.onClick.AddListener(AddToCartButtonOnClick);
+        leftButton.onClick.AddListener(LeftButtonOnPress);
+        rightButton.onClick.AddListener(RightButtonOnPress);
     }
 
     private void UnregisterButton()
@@ -72,6 +78,8 @@ public class ARButtons : MonoBehaviour
         toggleBatteryButton.onClick.RemoveAllListeners();
         toggleLightButton.onClick.RemoveAllListeners();
         addToCartButton.onClick.RemoveAllListeners();
+        leftButton.onClick.RemoveAllListeners();
+        rightButton.onClick.RemoveAllListeners();
     }
 
     private void SetInactiveEverything()
@@ -140,5 +148,15 @@ public class ARButtons : MonoBehaviour
     private void AddToCartButtonOnClick()
     {
 
+    }
+
+    private void LeftButtonOnPress()
+    {
+        toolsOnScene.transform.Rotate(Vector3.up * rotateSpeed);
+    }    
+    
+    private void RightButtonOnPress()
+    {
+        toolsOnScene.transform.Rotate(Vector3.down * rotateSpeed);
     }
 }

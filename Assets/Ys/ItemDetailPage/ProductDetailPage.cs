@@ -160,7 +160,7 @@ public class ProductDetailPage : MonoBehaviour
                 }
             }
         }
-
-        cartHolder.cartList.Add(cartItemScriptableObject);
+        else
+            cartHolder.cartList.Add(cartItemScriptableObject);
     }
 }
