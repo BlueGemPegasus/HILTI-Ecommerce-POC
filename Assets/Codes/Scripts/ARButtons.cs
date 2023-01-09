@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
+using static UnityEditor.Progress;
 
 public class ARButtons : MonoBehaviour
 {
@@ -107,7 +109,7 @@ public class ARButtons : MonoBehaviour
 
     private void ToggleDrillButtonOnClick()
     {
-        if(DrillAnimation == false)
+        if (DrillAnimation == false)
         {
             SetInactiveEverything();
             DrillAnimation = true;
@@ -119,7 +121,7 @@ public class ARButtons : MonoBehaviour
             DrillAnimation = false;
             aRObjectComponent.animator.SetBool("OnDrill", DrillAnimation);
             aRObjectComponent.drillingSound.Stop();
-        }    
+        }
     }
 
     private void ToggleBatteryButtonOnClick()
@@ -147,16 +149,34 @@ public class ARButtons : MonoBehaviour
 
     private void AddToCartButtonOnClick()
     {
-
+        AppManager.Instance.GoToPage(PageName.ItemDetail, () => { SetItemDetailPage(10); });
     }
 
     private void LeftButtonOnPress()
     {
         toolsOnScene.transform.Rotate(Vector3.up * rotateSpeed);
-    }    
-    
+    }
+
     private void RightButtonOnPress()
     {
         toolsOnScene.transform.Rotate(Vector3.down * rotateSpeed);
     }
+
+    public void SetItemDetailPage(int newId)
+    {
+        GameObject obj = null;
+        obj = AppManager.Instance.AllPage.FirstOrDefault(x => x.gameObject.name == "ItemDetailPage");
+        if (obj != null)
+        {
+            ProductDetailPage productDetailScript;
+            bool isAble;
+            isAble = obj.TryGetComponent<ProductDetailPage>(out productDetailScript);
+            if (isAble)
+            {
+                productDetailScript.SetSelectedItem(newId);
+                productDetailScript.id = newId;
+            }
+        }
+    }
+
 }

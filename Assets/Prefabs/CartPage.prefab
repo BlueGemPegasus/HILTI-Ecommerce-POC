@@ -1809,6 +1809,7 @@ MonoBehaviour:
   totalPrice: {fileID: 4906178611302900041}
   inputField: {fileID: 6605965597635771131}
   checkOutButton: {fileID: 1539123849181818482}
+  _totalPrice: 0
 --- !u!114 &3766530174225321297
 MonoBehaviour:
   m_ObjectHideFlags: 0
