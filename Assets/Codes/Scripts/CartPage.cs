@@ -47,8 +47,6 @@ public class CartPage : MonoBehaviour
     private float _discountAmount;
     [SerializeField] private float _totalPrice;
 
-
-
     private void OnEnable()
     {
         checkOutButton.onClick.AddListener(urlScript.GoToURL);
@@ -59,11 +57,10 @@ public class CartPage : MonoBehaviour
     private void OnDisable()
     {
         checkOutButton.onClick?.RemoveListener(urlScript.GoToURL);
-    }
-
-    private void LateUpdate()
-    {
-        UpdatePrice();
+        foreach (RectTransform item in cartContent)
+        {
+            Destroy(item.gameObject);
+        }
     }
 
     private void UpdateCart()
@@ -77,9 +74,12 @@ public class CartPage : MonoBehaviour
                     if (cartItem.id == item.itemId)
                     {
                         CartComponentCard component = Instantiate(cartComponentCardPrefab, cartContent).GetComponent<CartComponentCard>();
+                        component.cartPage = transform.GetComponent<CartPage>();
+                        component.itemID = item.itemId;
                         component.toolImage.sprite = item.itemSprite;
                         component.toolName.text = item.nameTxt;
                         component.quantity.text = cartItem.quantity.ToString();
+                        component.originalPrice = cartItem.price;
                         component.toolpackagePrice.text = "RM " + (cartItem.quantity * cartItem.price).ToString("N0", CultureInfo.InvariantCulture);
                     }
                 }
@@ -88,17 +88,22 @@ public class CartPage : MonoBehaviour
         }
     }
 
-    private void UpdatePrice()
+    public void UpdatePrice()
     {
         float _stotalPrice = 0;
 
-        foreach (RectTransform item in cartContent)
+        if (cartContent.childCount > 0)
         {
-            CartComponentCard componentCard = item.GetComponent<CartComponentCard>();
-            _stotalPrice += float.Parse(componentCard.toolpackagePrice.text.Replace("RM ", "").Replace(",", ""));
+            foreach (RectTransform item in cartContent)
+            {
+                CartComponentCard componentCard = item.GetComponent<CartComponentCard>();
+                _stotalPrice += float.Parse(componentCard.toolpackagePrice.text.Replace("RM ", "").Replace(",", ""));
+            }
         }
+        else
+            _stotalPrice = 0;
 
-        foreach(RectTransform item in addOnContent)
+        foreach (RectTransform item in addOnContent)
         {
             AddOnCartComponent componentCard = item.GetComponent<AddOnCartComponent>();
             _stotalPrice += ((componentCard.price) * int.Parse(componentCard.addOnComponentQuantity.text));

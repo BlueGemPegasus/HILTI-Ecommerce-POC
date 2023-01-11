@@ -21,6 +21,12 @@ public class GameManager : MonoBehaviour
     [Tooltip("The camera moving speed.")]
     public float moveSpeed = 1f;
 
+    public Rigidbody2D towerRigidbody;
+    public float wobbleForce = 0.1f;
+    public float wobbleTorque = 0.1f;
+    public int wobbleIncrement = 1; 
+
+
     [Header("UI Stuff")]
     [Tooltip("The User Interface for Hearts.")]
     public GameObject[] hearts;
@@ -265,6 +271,7 @@ public class GameManager : MonoBehaviour
         TowerGameStart();
         MoveHook();
         MoveObjects();
+        TowerWobbleEffect();
 
     }
 
@@ -302,5 +309,24 @@ public class GameManager : MonoBehaviour
         }
         if (outOfBounds.position == finalOutOfBoundsPosition && hook.transform.position == finalHookPosition && mainCamera.transform.position == finalCameraPosition)
             moveUp = false;
+    }
+    
+    // For some reason the wobble effect is not working.
+    // Need to further look into it
+    // A lot of time has wasted here, time to move on to next section.
+    private void TowerWobbleEffect()
+    {
+        // Increase wobble force and torque based on block count
+        float wobbleForceModified = wobbleForce + blockCount * wobbleIncrement;
+        float wobbleTorqueModified = wobbleTorque + blockCount * wobbleIncrement;
+
+        // Apply random force to the tower's rigidbody
+        float x = Random.Range(-1f, 1f);
+        float y = Random.Range(-1f, 1f);
+        towerRigidbody.AddForce(new Vector2(x, y) * wobbleForceModified);
+
+        // Apply random torque to the tower's rigidbody
+        float torque = Random.Range(-1f, 1f);
+        towerRigidbody.AddTorque(torque * wobbleTorqueModified);
     }
 }

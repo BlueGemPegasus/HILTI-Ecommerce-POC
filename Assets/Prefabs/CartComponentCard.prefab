@@ -633,7 +633,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1748546566184731564}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1748546566184731563}
+        m_TargetAssemblyTypeName: CartComponentCard, Assembly-CSharp
+        m_MethodName: GoToItemDetailPage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1748546566184731565
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -661,12 +673,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18e24bf57c4c52a4c8af52a1d74e4ec5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cartPage: {fileID: 0}
+  itemID: 0
+  originalPrice: 0
   toolImage: {fileID: 1748546565736366373}
   toolName: {fileID: 1748546564991269649}
   toolpackagePrice: {fileID: 4802041305414563832}
   quantity: {fileID: 8331089733962234862}
   plus_Button: {fileID: 8331089733716656677}
   minus_Button: {fileID: 8331089734021118208}
+  itemButton: {fileID: 1748546566184731562}
 --- !u!1 &7477617062278838599
 GameObject:
   m_ObjectHideFlags: 0

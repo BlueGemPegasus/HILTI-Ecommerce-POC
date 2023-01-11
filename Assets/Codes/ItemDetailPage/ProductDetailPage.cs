@@ -23,7 +23,6 @@ public class ProductDetailPage : MonoBehaviour
     public CartPage cartHolder;
 
     private int _itemId;
-    private float _price;
 
     //Quantity Panel
     [Tooltip("Quantity Panel")]
@@ -42,7 +41,7 @@ public class ProductDetailPage : MonoBehaviour
         //SetSelectedItem(id);
     }
 
-    void setPanel()
+    void SetPanel()
     {
         itemImg.sprite = item.itemSprite;
         toolNameText.text = item.nameTxt;
@@ -71,7 +70,7 @@ public class ProductDetailPage : MonoBehaviour
         if (item != null)
         {
             _itemId = id;
-            setPanel();
+            SetPanel();
         }
         //LayoutRebuilder.ForceRebuildLayoutImmediate(contentPanel);
     }
@@ -91,16 +90,12 @@ public class ProductDetailPage : MonoBehaviour
     {
         DropDownAction.getPackagePrice += SetPackagePrice;
         addToCartButton.onClick.AddListener(AddToCart);
-        //increaseBtn.onClick.AddListener(() => IncreaseQuantity());
-        //decreaseBtn.onClick.AddListener(() => DecreaseQuantity());
     }
 
     private void OnDisable()
     {
         DropDownAction.getPackagePrice -= SetPackagePrice;
         addToCartButton.onClick.RemoveAllListeners();
-        //increaseBtn.onClick.RemoveListener(() => IncreaseQuantity());
-        //decreaseBtn.onClick.RemoveListener(() => DecreaseQuantity());
     }
 
     private int GetCurrentQuantity()
@@ -137,30 +132,28 @@ public class ProductDetailPage : MonoBehaviour
             return;
 
         var cartItemScriptableObject = ScriptableObject.CreateInstance<CartsItem>();
+        cartItemScriptableObject.id = _itemId;
         cartItemScriptableObject.price = float.Parse(priceText.text.Replace("RM ", "").Replace(",", ""));
         cartItemScriptableObject.quantity = int.Parse(quantityText.text);
-        cartItemScriptableObject.id = _itemId;
+
+        bool matchFound = false;
 
         if (cartHolder.cartList.Count != 0)
         {
             foreach (CartsItem items in cartHolder.cartList)
             {
-                if (cartItemScriptableObject.id == items.id)
+                if (cartItemScriptableObject.id == items.id && cartItemScriptableObject.price == items.price)
                 {
-                    if (cartItemScriptableObject.price == float.Parse(priceText.text.Replace("RM ", "").Replace(",", "")))
-                    {
-                        items.quantity += cartItemScriptableObject.quantity;
-                        return;
-                    }
-                }
-                else
-                {
-                    cartHolder.cartList.Add(cartItemScriptableObject);
-                    return;
+                    items.quantity += cartItemScriptableObject.quantity;
+                    matchFound = true;
+                    break;
                 }
             }
         }
-        else
+
+        if (!matchFound)
+        {
             cartHolder.cartList.Add(cartItemScriptableObject);
+        }
     }
 }

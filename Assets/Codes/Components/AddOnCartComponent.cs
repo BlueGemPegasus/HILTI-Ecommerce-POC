@@ -7,6 +7,8 @@ using UnityEngine.UI;
 
 public class AddOnCartComponent : MonoBehaviour
 {
+    public CartPage cartPage;
+    
     public Button plusButton;
     public Button minusButton;
 
@@ -40,11 +42,13 @@ public class AddOnCartComponent : MonoBehaviour
     {
         int previousQuantity = GetCurrentQuantity();
         addOnComponentQuantity.text = (previousQuantity + 1).ToString();
+        cartPage.UpdatePrice();
     }
 
     public void DecreaseQuantity()
     {
         int previousQuantity = GetCurrentQuantity();
         addOnComponentQuantity.text = Mathf.Clamp((previousQuantity - 1), 0, 99).ToString();
+        cartPage.UpdatePrice();
     }
 }
