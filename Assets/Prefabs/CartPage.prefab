@@ -1798,6 +1798,7 @@ MonoBehaviour:
   cartList: []
   discountCodes:
   - UPM1
+  - H+SkyScrapers20
   itemIDList: 
   cartComponentCardPrefab: {fileID: 1748546566184731537, guid: 82f42c91ce2bdde4d94bba39ec5f1aa7,
     type: 3}

@@ -11764,32 +11764,13 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 4866616999231752028}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &8923583713643072866 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4062038488822712894, guid: 5a2688cb8b7068344896992b1e9c6de0,
-    type: 3}
-  m_PrefabInstance: {fileID: 4866616999231752028}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &6597952279023464682
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8923583713643072866}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5243c8cd7e615049b70210688675392, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  url: https://www.hilti.com.my/
 --- !u!114 &8923583713643072871 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4062038488822712891, guid: 5a2688cb8b7068344896992b1e9c6de0,
     type: 3}
   m_PrefabInstance: {fileID: 4866616999231752028}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8923583713643072866}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
