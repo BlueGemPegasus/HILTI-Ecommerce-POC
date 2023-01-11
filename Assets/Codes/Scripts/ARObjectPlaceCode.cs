@@ -35,6 +35,9 @@ public class ARObjectPlaceCode : MonoBehaviour
     [Tooltip("Reference for the Content GameObejct")]
     public Transform content;
 
+    [Tooltip("Reference for the AR Mangaer")]
+    public GameObject aRManager;
+
     private GameObject placedToolsOnScene;
 
     private bool _spawn = false;
@@ -48,12 +51,14 @@ public class ARObjectPlaceCode : MonoBehaviour
         placeButton.GetComponent<Button>().onClick.AddListener(PlaceOnClick);
         startButton.onClick.AddListener(OnBegin);
         CleanUp();
+        aRManager.SetActive(true);
     }
 
     private void OnDisable()
     {
         placeButton.GetComponent<Button>().onClick.RemoveAllListeners();
         startButton.onClick.RemoveAllListeners();
+        aRManager.SetActive(false);
     }
 
     private void Update()
