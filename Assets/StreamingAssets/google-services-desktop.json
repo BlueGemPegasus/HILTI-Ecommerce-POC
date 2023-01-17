@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "199642451280",
+    "project_id": "hilti-poc",
+    "storage_bucket": "hilti-poc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:199642451280:android:45f956e9d604f2ca3df055",
+        "android_client_info": {
+          "package_name": "com.LittleGameDev.HILTIEcommercePOC"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "199642451280-rgn7i3ebo6ab7bdpt7hisf8666qd1t9t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-FRp84ivBqgcu6CLuf6rHwre7iLiCBOU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "199642451280-rgn7i3ebo6ab7bdpt7hisf8666qd1t9t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
