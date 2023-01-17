@@ -43,7 +43,7 @@ public class GamificationSuggestion : MonoBehaviour
     public GamificationManager manager;
 
     //current local data
-    private SuggestionSO currentSuggestion;
+    [SerializeField]private SuggestionSO currentSuggestion;
     private int selectedCategory = 0;
 
     public ProductDetailPage productDetailPage;
@@ -56,7 +56,8 @@ public class GamificationSuggestion : MonoBehaviour
         tools.onClick.AddListener(() => suggestionFilterBtn(1));
         inserts.onClick.AddListener(() => suggestionFilterBtn(2));
         battery.onClick.AddListener(() => suggestionFilterBtn(3));
-        viewItem.onClick.AddListener(() => ViewSuggestedItem(currentSuggestion.suggestedItemId));
+        //viewItem.onClick.AddListener(() => ViewSuggestedItem(currentSuggestion.suggestedItemId));
+        viewItem.onClick.AddListener(ViewProductButtonOnClick);
         toHiltiLink.onClick.AddListener(urlScript.GoToURL);
         all.interactable = false;
         all.gameObject.transform.GetChild(0).GetComponent<TextMeshProUGUI>().color = Color.white;
@@ -208,9 +209,15 @@ public class GamificationSuggestion : MonoBehaviour
         selectedCategory = selection;
         CreateAccessoriesList();
     }
+    
+    private void ViewProductButtonOnClick()
+    {
+        AppManager.Instance.GoToPage(PageName.ItemDetail, () => { ViewSuggestedItem(currentSuggestion.suggestedItemId); });
+    }
 
     public void ViewSuggestedItem(int newId)
     {
+        Debug.Log("Function Call");
         GameObject obj = null;
         obj = AppManager.Instance.AllPage.FirstOrDefault(x => x.gameObject.name == "ItemDetailPage");
         if (obj != null)
