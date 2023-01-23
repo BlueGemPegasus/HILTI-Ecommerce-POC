@@ -17,14 +17,14 @@ MonoBehaviour:
     things around town!\u201D"
   - "Bob: \u201CI choose the right tools and equipment  for different repair and
     constructions.\u201D"
-  - "Bob: \u201CEvery time I choose the right tools you will be rewarded with points.
-    These points help you win rewards and unlock new levels\u201D"
-  - "Bob: \u201CEvery time I choose the right tools you will be rewarded with points.
-    These points help you win rewards and unlock new levels\u201D"
-  - "Bob: \u201CYour role is to help me to answer the right questions. But be careful,
-    for the wrong answers, points will be deducted\u201D"
-  - "Bob: \u201CYour role is to help me to answer the right questions. But be careful,
-    for the wrong answers, points will be deducted\u201D"
+  - "Bob: \u201CEvery time I choose the right tools you will be able to move to the
+    next question!\""
+  - "Bob: \u201CBut be careful, when you answer the wrong answer, one life will be
+    deducted\""
+  - "Bob: \u201CYou have a total of 3 lives so answer carefully and we will fix things
+    together!\""
+  - "Bob: \u201CAs we progress through the renovation project, I'll be asking you
+    questions about the different tasks we need to complete\u201D"
   - "Mr City Council: \u201CHi Bob! Welcome to the City of H. We need your help with
     a Renovation  project.\u201D"
   - "Mr City Council: \u201CThe building is in disrepair and requires repairs for
