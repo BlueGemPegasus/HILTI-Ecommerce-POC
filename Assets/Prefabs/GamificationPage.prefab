@@ -2775,6 +2775,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: b3ac54c34493c8c41adbfcfd67f503b6, type: 2}
   allItem: {fileID: 11400000, guid: 9b2fedcf19369f64fb0dbfd638765355, type: 2}
   manager: {fileID: 1314702701}
+  currentSuggestion: {fileID: 0}
   productDetailPage: {fileID: 0}
 --- !u!114 &5716820553205712316
 MonoBehaviour:
