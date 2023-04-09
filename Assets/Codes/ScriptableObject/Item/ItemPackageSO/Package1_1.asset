@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 216db3c08a0cdc44b8b8a16a7518ad94, type: 3}
   m_Name: Package1_1
   m_EditorClassIdentifier: 
-  packageContents: "1. Cordl. drill driver SBT 4-A22\n    1x Clamping band SFH 22-A
-    \n    1x Screw M8 SFH 22-A\n    1x Extension SFH 22-A\n    1x Comfort side handle"
+  packageContents: "1. Lorem Ipsum\n    1x Lorem Ipsum\n    1x Lorem Ipsum\n    1x
+    Lorem Ipsum\n    1x Lorem Ipsum"
   packagePrice: RM 2,030.00

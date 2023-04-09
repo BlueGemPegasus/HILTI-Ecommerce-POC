@@ -14,28 +14,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LevelName: Construction
   situationTextTitle: CURRENT SITUATION
-  situationText: You are called upon to repair a damaged building in a busy city
-    center. The building is an important part of the community. Start by hacking
-    off the damaged pieces.
+  situationText: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+    porttitor, enim in dignissim aliquet, turpis enim fringilla tellus, sit amet
+    hendrerit purus neque vitae nibh. Sed vel nulla dui. Aenean pretium a nunc nec
+    laoreet. Mauris iaculis gravida dui ut facilisis. Curabitur eget turpis lorem.
+    Nunc eu feugiat mauris.
   spriteImage: {fileID: 21300000, guid: 5bc9e2299f6deac44bd5888dba94e081, type: 3}
   questionText:
-  - The first step to repair the building is to use a tool for hacking. This tool
-    is to remove the debris of the leftover structure. Which tool is suitable for
-    that?
-  - "One of your  battery-actuated tool\u2019s nails are now blunt after using for
-    3 hours. Which are the suitable nail to replace it?"
-  - "Mr City Council: \u201CCongratulations! You fix the building! Now the citizens
-    can use it as the town hall\u201D"
+  - 'Q1: Lorem ipsum dolor sit amet, consectetur adipiscing elit.  hendrerit purus
+    neque vitae nibh feugiat mauris.'
+  - 'Q2: Lorem ipsum dolor sit amet, consectetur adipiscing elit.  hendrerit purus
+    neque vitae nibh feugiat mauris.'
+  - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque porttitor, enim
+    in dignissim aliquet, turpis enim fringilla tellus, sit amet hendrerit purus
+    neque vitae nibh. Sed vel nulla dui. Aenean pretium a nunc nec laoreet. Mauris
+    iaculis gravida dui ut facilisis. Curabitur eget turpis lorem. Nunc eu feugiat
+    mauris.
   questionImage: []
   answerText1:
-  - MODEL GX-3
-  - X-P B3
+  - WRONG
+  - CORRECT
   answerText2:
-  - MODEL BX-3
-  - X-GHP
+  - WRONG
+  - WRONG
   answerText3:
-  - MODEL  TE500
-  - X-GN
+  - CORRECT
+  - WRONG
   correctAnswer: 0300000001000000
   avatarImage:
   - {fileID: 21300000, guid: 8ff4def9bb8f1054da8bb2e4b27877d0, type: 3}

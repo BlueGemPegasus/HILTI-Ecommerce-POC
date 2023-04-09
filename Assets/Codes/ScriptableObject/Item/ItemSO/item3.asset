@@ -14,13 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 3
   itemSprite: {fileID: 21300000, guid: 42425a5fcef6d7c4dabeb53f22282a4d, type: 3}
-  nameTxt: 'SCW 22-A CORDLESS CIRCULAR SAW '
-  descriptionTxt: 22V cordless circular saw with optimised power-to-weight ratio
-    for straight cuts up to 57 mm depth
+  nameTxt: Item C
+  descriptionTxt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
   packageList:
   - {fileID: 11400000, guid: 5e304f7c30ea2ad4ca7c98e1e86c6c05, type: 2}
-  toolDetailDescription: "Max. cutting depth: 57 mm\nBlade diameter: 165 mm\nBase
-    material: Wood, Sandwich panel\nNo load RPM: gear 1: 4000 rpm\nGuiding rail compatibility:
-    Yes\nDimensions (LxWxH): 393 x 208 x 241 mm\nCutting depth at 45 degrees: 42
-    mm\nMax. bevel angle: 50 \xB0\nA-weighted emission sound pressure level: 93 dB
-    (A)1\nTriaxial vibration value for sawing into wood (ah,W): 1.2 m/s\xB2 2"
+  toolDetailDescription: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Quisque porttitor, enim in dignissim aliquet, turpis enim fringilla tellus, sit
+    amet hendrerit purus neque vitae nibh. Sed vel nulla dui.

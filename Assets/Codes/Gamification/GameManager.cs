@@ -216,9 +216,9 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 0f;
 
-        if (blockCount >= 25)
+        if (blockCount >= 10)
         {
-            endingText.text = "Game Ended!\nTower Height:" + blockCount.ToString() + "\n\nYour hardwork of building a skyscrapers have made the Mayor to give you another reward!\n\nDiscount Code:\nH+SkyScrapers20";
+            endingText.text = "Game Ended!\nTower Height:" + blockCount.ToString() + "\n\nYour hardwork of building a skyscrapers have made the Mayor to give you another reward!\n\nDiscount Code:\nH+SKYSCRAPER1";
             endingPanel.SetActive(true);
         }
         else

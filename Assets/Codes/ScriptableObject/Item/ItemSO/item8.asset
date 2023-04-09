@@ -14,29 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 8
   itemSprite: {fileID: 21300000, guid: 04aeedbc95c2f9d40b4de5fa67035209, type: 3}
-  nameTxt: SIW 9-A22 3/4" CORDLESS IMPACT WRENCH
-  descriptionTxt: Ultimate-class 22V high-torque impact wrench with 3/4" through
-    hole anvil for bolting and anchoring
+  nameTxt: Item H
+  descriptionTxt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
   packageList:
   - {fileID: 11400000, guid: 733787df3391da742b887dd204195700, type: 2}
-  toolDetailDescription: 'Anvil type: 3/4" through hole
-
-    Maximum torque: 800
-    Nm (1)1
-
-    Nut-busting torque: 875 Nm
-
-    Full hammering frequency: 2200 impacts/minute
-
-    Number
-    of gears: 1
-
-    Dimensions (LxWxH): 250 x 92 x 267 mm
-
-    Tool body weight:
-    2.86 kg
-
-    A-weighted emission sound pressure level: 98.5 dB (A)2
-
-    Rated
-    voltage: 21.6 V'
+  toolDetailDescription: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Quisque porttitor, enim in dignissim aliquet, turpis enim fringilla tellus, sit
+    amet hendrerit purus neque vitae nibh. Sed vel nulla dui.

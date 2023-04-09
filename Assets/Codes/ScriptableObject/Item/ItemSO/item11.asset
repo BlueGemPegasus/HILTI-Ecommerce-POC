@@ -14,28 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 11
   itemSprite: {fileID: 21300000, guid: e7867dd8cf43613459afb3b86e6ebd41, type: 3}
-  nameTxt: TE 30-A36 CORDLESS ROTARY HAMMER
-  descriptionTxt: Powerful SDS Plus (TE-C) cordless rotary hammer for heavy-duty
-    concrete drilling and corrective chiselling
+  nameTxt: Item K
+  descriptionTxt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
   packageList:
   - {fileID: 11400000, guid: 521cf284b1dabdb41a806f527c111f22, type: 2}
-  toolDetailDescription: 'Weight according to EPTA Procedure 01/2003: 5.1 kg
-
-    Optimum
-    hammer drilling range: 10 - 20 mm
-
-    Hammer drilling diameter range: 4 - 28
-    mm
-
-    Single impact energy: 3.6 J
-
-    Hammer drilling RPM: 850 tours/minute
-
-    Full
-    hammering frequency: 4500 impacts/minute
-
-    Functionality: Active Torque Control
-    (ATC), Active Vibration Reduction (AVR), Removable chuck, Reverse mode, Depth
-    gauge
-
-    Dust removal system available: TE DRS-D, TE DRS-S'
+  toolDetailDescription: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Quisque porttitor, enim in dignissim aliquet, turpis enim fringilla tellus, sit
+    amet hendrerit purus neque vitae nibh. Sed vel nulla dui.

@@ -14,28 +14,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LevelName: Electricity
   situationTextTitle: CURRENT SITUATION
-  situationText: You have been tasked with repairing electrical  system for the city. 
-    In this task you will need to answer questions relate to repairing electrical
-    outlets and running new wires.
+  situationText: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+    porttitor, enim in dignissim aliquet, turpis enim fringilla tellus, sit amet
+    hendrerit purus neque vitae nibh. Sed vel nulla dui. Aenean pretium a nunc nec
+    laoreet. Mauris iaculis gravida dui ut facilisis. Curabitur eget turpis lorem.
+    Nunc eu feugiat mauris.
   spriteImage: {fileID: 21300000, guid: 67b058dc7e4be344fbddbb04244bffcb, type: 3}
   questionText:
-  - We will first need to fasten the electrical cables and conduits. Which of the
-    following tool can be used to fasten cables?
-  - 'Name the following Component:'
-  - "Mr City Council: \u201CCongratulations! You did it Bob! Everyone in the City
-    have electricity now!\u201D"
+  - 'Q1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
+  - 'Q2: Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
+  - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque porttitor, enim
+    in dignissim aliquet, turpis enim fringilla tellus, sit amet hendrerit purus
+    neque vitae nibh. Sed vel nulla dui. Aenean pretium a nunc nec laoreet. Mauris
+    iaculis gravida dui ut facilisis. Curabitur eget turpis lorem. Nunc eu feugiat
+    mauris.
   questionImage:
   - {fileID: 0}
   - {fileID: 21300000, guid: f5a58b2ef7b619744b07065b85daf873, type: 3}
   answerText1:
-  - MODEL SCM 22-A
-  - SWITCH
+  - WRONG
+  - WRONG
   answerText2:
-  - MODEL TE2 -A22
-  - GRIP
+  - CORRECT
+  - WRONG
   answerText3:
-  - DUCTWORK MOUNTING
-  - CHUCK
+  - WRONG
+  - CORRECT
   correctAnswer: 0200000003000000
   avatarImage:
   - {fileID: 21300000, guid: ee809907bcc36fe4f8f41dcd53c7850f, type: 3}

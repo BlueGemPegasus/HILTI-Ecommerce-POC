@@ -14,11 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 1
   itemSprite: {fileID: 21300000, guid: c639f1b9d7c04be4a9d8efd759a94c73, type: 3}
-  nameTxt: SBT 4-A22 CORDLESS DRILL DRIVER
-  descriptionTxt: Cordless drill driver for predrilling accurate holes and installing
-    S-BT fasteners
+  nameTxt: Item A Drill
+  descriptionTxt: Some Sort Of Drill
   packageList:
   - {fileID: 11400000, guid: ecf7c20b8cb2a3043b88ca809d69a5b4, type: 2}
-  toolDetailDescription: "RPM: 2140 tours/minute \nMax. torque: 50 Nm \nRated voltage:
-    21.6 V \nWeight: 2.52 kg \nDimensions (LxWxH): 248 x 92 x 244 mm \nChuck type:
-    Keyless, steel jaws, 1.5 to 13 mm \nProduct class: Ultimate"
+  toolDetailDescription: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Quisque porttitor, enim in dignissim aliquet, turpis enim fringilla tellus, sit
+    amet hendrerit purus neque vitae nibh. Sed vel nulla dui.

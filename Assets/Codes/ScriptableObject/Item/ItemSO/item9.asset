@@ -14,30 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 9
   itemSprite: {fileID: 21300000, guid: 93cbb6aff229e7844a2a75d298d92757, type: 3}
-  nameTxt: TE 2-A22 CORDLESS ROTARY HAMMER
-  descriptionTxt: Compact pistol-grip 22V cordless rotary hammer for superior handling
+  nameTxt: Item I
+  descriptionTxt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
   packageList:
   - {fileID: 11400000, guid: 3d47248bb40e9ad4bb0cc25ff9ca620d, type: 2}
   - {fileID: 11400000, guid: b41a703f6e87c864b8eb2265b49e5a25, type: 2}
   - {fileID: 11400000, guid: 1e3e87d04eb08234c8055610f95960d0, type: 2}
   - {fileID: 11400000, guid: 1b078348e02776a4f8d5f90018f84e01, type: 2}
   - {fileID: 11400000, guid: 570bdf88ed62f114fbfe6bffa13689c5, type: 2}
-  toolDetailDescription: 'Weight according to EPTA Procedure 01/2003: 2.7 kg
-
-    Optimum
-    hammer drilling range: 4 - 12 mm
-
-    Hammer drilling diameter range: 4 - 16
-    mm
-
-    Single impact energy: 1.5 J
-
-    Hammer drilling RPM: 980 tours/minute
-
-    Full
-    hammering frequency: 5040 impacts/minute
-
-    Functionality: LED working light,
-    Reverse mode, Depth gauge
-
-    Dust removal system available: TE DRS-D, TE DRS-S'
+  toolDetailDescription: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Quisque porttitor, enim in dignissim aliquet, turpis enim fringilla tellus, sit
+    amet hendrerit purus neque vitae nibh. Sed vel nulla dui.

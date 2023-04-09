@@ -14,16 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 5
   itemSprite: {fileID: 21300000, guid: 4a5df70ee4929724d938bf03079c9188, type: 3}
-  nameTxt: TE 60-A36 CORDLESS ROTARY HAMMER
-  descriptionTxt: High-performance cordless SDS Max combihammer with Active Vibration
-    Reduction and Active Torque Control for heavy-duty drilling and chiselling in
-    concrete
+  nameTxt: Item E
+  descriptionTxt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
   packageList:
   - {fileID: 11400000, guid: ec8e98ce6887a5547a7428260932ba4f, type: 2}
-  toolDetailDescription: "Weight according to EPTA Procedure 01/2003: 8.1 kg\nOptimum
-    hammer drilling range: 18 - 40 mm\nHammer drilling diameter range: 12 - 40 mm\nRated
-    voltage: 36 V\nSingle impact energy: 8.1 J\nHammer drilling RPM: 340 tours/minute\nFull
-    hammering frequency: 3300 impacts/minute\nFunctionality: Active Torque Control
-    (ATC), Active Vibration Reduction (AVR), Chiselling, Power reduction\nTriaxial
-    vibration value for hammer drilling into concrete (ah,HD): 8.3 m/s\xB21\nDust
-    removal system available: TE DRS-Y, TE DRS-D"
+  toolDetailDescription: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Quisque porttitor, enim in dignissim aliquet, turpis enim fringilla tellus, sit
+    amet hendrerit purus neque vitae nibh. Sed vel nulla dui.

@@ -12,10 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 216db3c08a0cdc44b8b8a16a7518ad94, type: 3}
   m_Name: Package2_1
   m_EditorClassIdentifier: 
-  packageContents: '1. Cordl. drill SF BT 22-A #2123719
+  packageContents: '1. Lorem Ipsum
 
-    1x Cordl. drill SF BT
-    22-A
+    1x Lorem Ipsum
 
-    1x Support strip SF BT 18/22-A'
+    1x Lorem Ipsum'
   packagePrice: RM 1,260.00

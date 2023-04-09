@@ -36,7 +36,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 732.5, y: 0}
+  m_AnchoredPosition: {x: 788.75, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5442887754809832918
@@ -293,7 +293,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: B36 2.6 36V BATTERY
+  m_text: High Voltage Li-ion
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b15d1dffbdb740341a523b1ca6ea06ae, type: 2}
   m_sharedMaterial: {fileID: 3988645116314888357, guid: b15d1dffbdb740341a523b1ca6ea06ae,

@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 216db3c08a0cdc44b8b8a16a7518ad94, type: 3}
   m_Name: Package3_1
   m_EditorClassIdentifier: 
-  packageContents: "1. Cordl. circular saw SCW 22-A case #423165\n    1x Cordl. circular
-    saw SCW 22-A\r\n    1x Rail adapter SCW assy\r\n    1x Case SCW 22-A"
+  packageContents: "1.Lorem Ipsum\n    1x Lorem ipsum dolor sit amet\n    1x Lorem
+    ipsum dolor sit amet\n    1x Lorem ipsum dolor"
   packagePrice: ' RM 1,690.00'

@@ -14,13 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 4
   itemSprite: {fileID: 21300000, guid: 626e8b4a96e0060488b54953ba6691b6, type: 3}
-  nameTxt: 'SCM 22-A CORDLESS METAL SAW '
-  descriptionTxt: Cordless 22V circular saw operated by Li-ion battery featuring
-    guide rail compatibility and metal chip collector for cold metal cutting
+  nameTxt: Item D
+  descriptionTxt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
   packageList:
   - {fileID: 11400000, guid: 77abfa34eb67761409fcc9c0b1655c4b, type: 2}
-  toolDetailDescription: "Max. cutting depth: 57 mm\nBlade diameter: 165 mm\nBase
-    material: Metal, Sandwich panel\nNo load RPM: gear 1: 3500 rpm\nGuiding rail
-    compatibility: Yes\nDimensions (LxWxH): 370 x 206 x 242 mm\nA-weighted emission
-    sound pressure level: 93 dB (A)1\nTriaxial vibration value for sawing into metal
-    (ah,M): 0.82 m/s\xB2 2"
+  toolDetailDescription: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Quisque porttitor, enim in dignissim aliquet, turpis enim fringilla tellus, sit
+    amet hendrerit purus neque vitae nibh. Sed vel nulla dui.

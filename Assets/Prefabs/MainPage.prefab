@@ -687,10 +687,10 @@ RectTransform:
   m_Father: {fileID: 1066082965113784726}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 540, y: -32.5}
-  m_SizeDelta: {x: 1080, y: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 543.235, y: 0}
+  m_SizeDelta: {x: 1086.47, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1066082963445532936
 CanvasRenderer:
@@ -1584,10 +1584,10 @@ RectTransform:
   m_Father: {fileID: 1066082965113784726}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 540, y: -150}
-  m_SizeDelta: {x: 1080, y: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 543.235, y: 0}
+  m_SizeDelta: {x: 1086.47, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1066082964575676606
 CanvasRenderer:
@@ -2215,7 +2215,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Find your perfect tool \nhere with HILTI+"
+  m_text: 'Find your perfect product
+
+    with SpaceWalker!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5a0801cdd63f78542bcb234b4d00b8ed, type: 2}
   m_sharedMaterial: {fileID: -6552255164544111799, guid: 5a0801cdd63f78542bcb234b4d00b8ed,

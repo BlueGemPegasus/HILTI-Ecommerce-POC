@@ -14,19 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 2
   itemSprite: {fileID: 21300000, guid: 779ee27e8e9dd4a46976454371338ebd, type: 3}
-  nameTxt: SF BT CORDLESS DRILL
-  descriptionTxt: Cordless drill for predrilling accurate holes for X-BT fasteners
+  nameTxt: Item B
+  descriptionTxt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
   packageList:
   - {fileID: 11400000, guid: 45ce26b684e536049be5d1f5662b015e, type: 2}
-  toolDetailDescription: 'Application: [consumable dependent]
-
-    RPM: 4,000
-
-    Max.
-    torque: 3 Nm
-
-    Rated voltage: 21.6 V
-
-    Weight: 1.9 kg
-
-    Width: 91 mm'
+  toolDetailDescription: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Quisque porttitor, enim in dignissim aliquet, turpis enim fringilla tellus, sit
+    amet hendrerit purus neque vitae nibh. Sed vel nulla dui.

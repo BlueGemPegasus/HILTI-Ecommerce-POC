@@ -14,33 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 10
   itemSprite: {fileID: 21300000, guid: 77b7e38ad868c8149aef6fc8384f6dd5, type: 3}
-  nameTxt: TE 6-A36 CORDLESS ROTARY HAMMER
-  descriptionTxt: 'Powerful D-grip 36V cordless rotary hammer with superior concrete
-    drilling and chipping performance  '
+  nameTxt: Item J
+  descriptionTxt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
   packageList:
   - {fileID: 11400000, guid: 4c367f7285d6722438863253c8bfc218, type: 2}
   - {fileID: 11400000, guid: 71a0108ab54dc0644bbe60bfdee2fae9, type: 2}
   - {fileID: 11400000, guid: 0ba1330e320147c45a5cfc5d2aaa12d3, type: 2}
   - {fileID: 11400000, guid: 69e8d77c18ecbd0489d7e750c68e4ff7, type: 2}
   - {fileID: 11400000, guid: 084b2dccb21ffcb4ca7ec94aa9ef6f43, type: 2}
-  toolDetailDescription: 'Weight according to EPTA Procedure 01/2003: 3.7 kg
-
-    Optimum
-    hammer drilling range: 6 - 16 mm
-
-    Hammer drilling diameter range: 4 - 20
-    mm
-
-    Single impact energy: 2.5 J
-
-    Hammer drilling RPM: 1050 tours/minute
-
-    Full
-    hammering frequency: 5100 impacts/minute
-
-    Functionality: Active Vibration
-    Reduction (AVR), Integrated Dust Removal System (DRS), Removable chuck, LED working
-    light, Reverse mode, Depth gauge
-
-    Dust removal system available: TE DRS-6-A,
-    TE DRS-D, TE DRS-S, DCD'
+  toolDetailDescription: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Quisque porttitor, enim in dignissim aliquet, turpis enim fringilla tellus, sit
+    amet hendrerit purus neque vitae nibh. Sed vel nulla dui.
